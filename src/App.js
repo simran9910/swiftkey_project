@@ -6,6 +6,44 @@ const transitionTypes = ['bars', 'vortex', 'blinds', 'checkerboard', 'box'];
 const getRandomTransition = () => transitionTypes[Math.floor(Math.random() * transitionTypes.length)];
 
 const heroSlides = [
+
+  {
+    image: '/assets/hero-showroom.png',
+    label: 'Welcome',
+    titleLine1: 'Welcome',
+    titleLine2: 'to SwiftKey',
+    subtitle: 'Your premium construction partner',
+    text: 'We deliver high-quality construction and hospitality solutions across Kenya.',
+  },
+
+
+  {
+    image: '/assets/image66.jpeg',
+    label: 'Luxury Construction',
+    titleLine1: 'Building',
+    titleLine2: 'Modern Spaces',
+    subtitle: 'Premium hospitality and commercial interiors',
+    text: 'We create elegant restaurants, cafés, and hospitality spaces with modern construction solutions.',
+  },
+
+  {
+    image: '/assets/image2.jpeg',
+    label: 'Interior Excellence',
+    titleLine1: 'Crafting',
+    titleLine2: 'Elegant Interiors',
+    subtitle: 'Designed for comfort and functionality',
+    text: 'SwiftKey delivers stylish interiors with durable finishes and exceptional customer experiences.',
+  },
+
+  {
+    image: '/assets/image22.jpeg',
+    label: 'Trusted Engineering',
+    titleLine1: 'Innovative',
+    titleLine2: 'Construction Solutions',
+    subtitle: 'Reliable execution with premium quality',
+    text: 'From planning to execution, we provide high-end construction and fit-out services across Kenya.',
+  },
+
   {
     image: '/assets/project-mammam-vietnamese.png',
     label: 'Commercial Kitchen Specialists',
@@ -41,12 +79,12 @@ const heroSlides = [
   },
 
   {
-    image: '/assets/project-cake-city-luqman.png',
-    label: 'Food Service Fit-Outs',
-    titleLine1: 'Built',
-    titleLine2: 'To Last.',
-    subtitle: 'Durable finishes crafted for high-use commercial spaces.',
-    text: 'From stainless steel fabrication to interior fixtures, every detail is selected for hygiene, longevity, and visual quality.',
+    image: '/assets/project-artcaffe-redhill.png',
+    label: 'Premium Interior Solutions',
+    titleLine1: 'Designed',
+    titleLine2: 'For Impact.',
+    subtitle: 'Modern commercial interiors with elegance and functionality.',
+    text: 'We create visually stunning and highly practical environments tailored for restaurants, cafés, and hospitality businesses.',
   },
 ];
 
@@ -59,10 +97,11 @@ const services = [
 ];
 
 const projects = [
+
   {
-    image: '/assets/project-mam-mam.png',
-    name: 'MAM MAM Mwanzi Westlands',
-    category: 'Modern Interiors & Fit-outs',
+    image: '/assets/image66.jpeg',
+    name: 'Urban Spice Lounge',
+    category: 'Luxury Restaurant Interiors',
     scope: 'Restaurant fit-out and dining environment',
     points: [
       'Designed and developed a modern restaurant space focused on delivering a premium dining experience.',
@@ -71,10 +110,50 @@ const projects = [
       'Implemented ambient and feature lighting to enhance the dining atmosphere and highlight key areas.',
     ],
   },
+
+  {
+    image: '/assets/project-mam-mam.png',
+    name: 'The Golden Fork Café',
+    category: 'Premium Café Design',
+    scope: 'Premium café design and customer experience',
+    points: [
+      'Created a contemporary café interior with elegant seating and warm ambience.',
+      'Designed efficient service and kitchen layouts for smooth workflow.',
+      'Integrated decorative lighting and modern textures for a premium visual appeal.',
+      'Focused on customer comfort with functional and aesthetic furniture placement.',
+    ],
+  },
+
+  {
+    image: '/assets/image2.jpeg',
+    name: 'Elite Dining Hub',
+    category: 'Commercial Restaurant Design',
+    scope: 'Restaurant branding and interior execution',
+    points: [
+      'Developed a visually appealing dining environment with modern finishes.',
+      'Optimized customer movement and staff operational efficiency.',
+      'Used custom lighting concepts to enhance mood and branding.',
+      'Delivered a durable and stylish commercial dining setup.',
+    ],
+  },
+
+  {
+    image: '/assets/image44.jpeg',
+    name: 'Skyline Bistro Interiors',
+    category: 'Luxury Restaurant Interiors',
+    scope: 'Restaurant fit-out and dining environment',
+    points: [
+      'Designed and developed a modern restaurant space focused on delivering a premium dining experience.',
+      'Planned an efficient layout that supports smooth customer flow and optimized service operations.',
+      'Used high-quality materials and refined finishes to create a stylish and comfortable environment.',
+      'Implemented ambient and feature lighting to enhance the dining atmosphere and highlight key areas.',
+    ],
+  },
+
   {
     image: '/assets/project-cake-city.png',
     name: 'Cake City TRM',
-    category: 'Modern Interiors & Fit-outs',
+    category: 'Bakery & Dessert Spaces',
     scope: 'Bakery retail planning and display counters',
     points: [
       'Designed a premium bakery retail space focused on creating a warm and welcoming customer atmosphere.',
@@ -84,10 +163,11 @@ const projects = [
       'Delivered a visually appealing bakery environment that aligns with brand identity.',
     ],
   },
+
   {
     image: '/assets/project-art-caffe.png',
     name: 'Art Caffe Lavington',
-    category: 'Modern Interiors & Fit-outs',
+    category: 'Contemporary Café Interiors',
     scope: 'Cafe interior and commercial hospitality space',
     points: [
       'Developed a stylish café interior combining modern design with a comfortable customer experience.',
@@ -97,10 +177,11 @@ const projects = [
       'Created an inviting café environment that encourages customers to relax and socialize.',
     ],
   },
+
   {
     image: '/assets/project-cake-city-nord.png',
-    name: 'Cake City Nord Mall Ruiru',
-    category: 'Modern Interiors & Fit-outs',
+    name: 'Cake City Nord Mall',
+    category: 'Retail Bakery Architecture',
     scope: 'Retail bakery outlet and showcase design',
     points: [
       'Developed a stylish retail shop with a modern, welcoming ambiance.',
@@ -110,49 +191,53 @@ const projects = [
       'Delivered a functional and aesthetically pleasing store aligned with brand identity.',
     ],
   },
+
   {
     image: '/assets/project-artcaffe-redhill.png',
     name: 'Artcaffe Redhill',
-    category: 'Modern Interiors & Fit-outs',
+    category: 'Premium Coffee Spaces',
     scope: 'Cozy suburban cafe construction and fit-out',
     points: [
-      'Executed a modern caffé construction with natural lighting and elegant finishes.',
+      'Executed a modern café construction with natural lighting and elegant finishes.',
       'Created versatile seating layouts to optimize both space and customer flow.',
       'Installed premium flooring, wall treatments, and ceiling designs for a stylish ambiance.',
       'Integrated cozy and functional interior elements tailored to café culture.',
       'Delivered the project on schedule with high-quality construction standards.',
     ],
   },
+
   {
     image: '/assets/project-cake-city-luqman.png',
-    name: 'Cake City Luqman Petrol Station',
-    category: 'Modern Interiors & Fit-outs',
+    name: 'Cake City Luqman Station',
+    category: 'Express Food Outlet Design',
     scope: 'Express bakery fit-out and layout planning',
     points: [
       'Developed a stylish bakery outlet with functionality and customer comfort in focus.',
-      'Constructed interiors that blend elegance with Cake City\'s branding.',
+      'Constructed interiors that blend elegance with Cake City branding.',
       'Optimized seating and service areas for smooth customer flow.',
       'Installed durable finishes ensuring long-lasting usability.',
       'Delivered the project within strict deadlines and quality benchmarks.',
     ],
   },
+
   {
     image: '/assets/project-mammam-vietnamese.png',
-    name: 'Mammam Vietnamese Restaurant Westland',
-    category: 'Modern Interiors & Fit-outs',
+    name: 'Mammam Vietnamese Dining',
+    category: 'Ethnic Restaurant Spaces',
     scope: 'Ethnic dining construction and thematic interior',
     points: [
       'Executed construction reflecting authentic Vietnamese dining culture.',
       'Applied modern interior finishes to enhance guest comfort and style.',
       'Constructed functional dining areas with efficient seating arrangements.',
       'Integrated premium materials to balance tradition with modern design.',
-      'Delivered a unique restaurant space aligned with the client\'s cultural theme.',
+      'Delivered a unique restaurant space aligned with the client cultural theme.',
     ],
   },
+
   {
     image: '/assets/project-joto-ramen.png',
-    name: 'Joto Ramen Japanese Restaurant',
-    category: 'Modern Interiors & Fit-outs',
+    name: 'Joto Ramen House',
+    category: 'Japanese Dining Concepts',
     scope: 'Thematic restaurant interior and noodle bar layout',
     points: [
       'Constructed interiors inspired by traditional Japanese minimalism.',
@@ -162,32 +247,7 @@ const projects = [
       'Delivered a modern yet culturally rooted dining space with precision.',
     ],
   },
-  // {
-  //   image: '/assets/swiftkey-app/public/assets/project-cake-city-nord.png',
-  //   name: 'Alchemist Toilets',
-  //   category: 'Commercial Projects',
-  //   scope: 'High-use restroom construction and sanitation facilities',
-  //   points: [
-  //     'Built modern restroom facilities with durable construction materials.',
-  //     'Executed layouts designed for high-volume usability and hygiene.',
-  //     'Installed contemporary fittings to maintain practicality and style.',
-  //     'Integrated ventilation and lighting for a comfortable user experience.',
-  //     'Delivered long-lasting facilities ensuring ease of maintenance.',
-  //   ],
-  // },
-  // {
-  //   image: '/assets/projects-overview.png',
-  //   name: 'Alchemist 3 Floor Bar Westland',
-  //   category: 'Commercial Projects',
-  //   scope: 'Multi-level structural lounge and nightlife venue',
-  //   points: [
-  //     'Constructed a three-level bar with industrial-chic interiors.',
-  //     'Executed open-plan layouts ideal for nightlife and social events.',
-  //     'Applied high-quality finishes across multiple levels for durability.',
-  //     'Integrated design elements to create vibrant and dynamic spaces.',
-  //     'Delivered a landmark nightlife venue on time with top construction standards.',
-  //   ],
-  // },
+
   {
     image: '/assets/hero-showroom.png',
     name: 'Dijo Westland',
@@ -201,22 +261,10 @@ const projects = [
       'Completed projects on schedule while maintaining superior construction standards.',
     ],
   },
-  // {
-  //   image: '/assets/projects-overview.png',
-  //   name: 'Kangauri',
-  //   category: 'Modern Interiors & Fit-outs',
-  //   scope: 'Commercial retail boutique design and structural work',
-  //   points: [
-  //     'Designed and constructed a modern retail space for a clothing mall.',
-  //     'Implemented high-quality finishes and functional layouts for optimal customer flow.',
-  //     'Integrated attractive display areas and lighting to enhance the shopping experience.',
-  //     'Executed structural and fit-out work with attention to durability and aesthetics.',
-  //     'Delivered the project on time while maintaining excellent construction standards.',
-  //   ],
-  // },
+
 ];
 
-const categories = ['All', 'Modern Interiors & Fit-outs', 'Civil & Metal Engineering', 'Commercial Projects'];
+const categories = ['All', 'Modern Interiors & Fit-outs', 'Civil & Metal Engineering'];
 
 const industries = [
   'Construction',
@@ -337,11 +385,11 @@ function App() {
       {/* ======= FIXED FLOATING HEADER ======= */}
       <header className={`topbar ${scrolled ? 'scrolled' : ''}`}>
         <a className="brand" href="#home" aria-label="SwiftKey Development Limited">
-          <span className="brand-mark">SK</span>
-          <span>
-            <strong>SwiftKey</strong>
-            <small>Development Limited</small>
-          </span>
+          <img
+            src="/assets/image copy 2.png"
+            alt="SwiftKey Development Limited"
+            className="brand-logo"
+          />
         </a>
 
         <nav className="nav-links" aria-label="Main navigation">
@@ -349,7 +397,7 @@ function App() {
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Contact Us</a>
           <a className="header-cta" href="#contact">Request a Quote</a>
         </nav>
 
@@ -434,7 +482,7 @@ function App() {
           <div className="transition-chip">{transitionType} transition</div>
 
           {/* Bottom controls bar */}
-          <div className="slider-controls-bottom">
+          {/* <div className="slider-controls-bottom">
             <div className="slider-dots">
               {heroSlides.map((item, index) => (
                 <button
@@ -453,7 +501,7 @@ function App() {
               <strong>{String(activeSlide + 1).padStart(2, '0')}</strong>
               <em> / {String(heroSlides.length).padStart(2, '0')}</em>
             </span>
-          </div>
+          </div> */}
 
           {/* Scroll indicator */}
           <div className="scroll-indicator" aria-hidden="true">
@@ -482,75 +530,104 @@ function App() {
           </div>
         </section>
 
+
         {/* ======= ABOUT ======= */}
         <section className="section about-section reveal" id="about">
-          <div className="section-heading">
+
+          {/* SECTION HEADING */}
+          <div className="section-heading about-heading">
             <div>
               <p className="eyebrow">About Us</p>
-              <h2>Built for operators who demand dependable execution.</h2>
+
+              <h2>
+                Built for businesses that demand quality, reliability, and precision.
+              </h2>
             </div>
-            <p>
-              SwiftKey Development Limited is a Kenyan-owned private limited company operating at
-              the intersection of commercial construction, kitchen planning, fabrication, fit-outs,
-              and maintenance.
+
+            <p className="about-top-text">
+              SwiftKey Development Limited is a Kenyan-owned private limited company
+              specializing in commercial construction, kitchen planning, fabrication,
+              fit-outs, and maintenance solutions for hospitality and food-service
+              industries.
             </p>
           </div>
 
+          {/* ABOUT CONTENT */}
           <div className="about-showcase">
-            <div className="about-copy about-feature-card">
-              <span className="about-badge">01</span>
-              <h3>Creative planning with reliable execution</h3>
-              <p>
-                The company was incorporated on 11th February 2025 and is committed to high-quality
-                solutions for commercial kitchen spaces and related facilities. Our work is grounded
-                in professionalism, technical expertise, innovation, and quality workmanship.
-              </p>
-              <p>
-                We provide reliable, durable, and aesthetically refined solutions that meet
-                functional and regulatory requirements for restaurants, hotels, cafes, cafeterias,
-                bars, institutions, and commercial food service establishments.
-              </p>
+
+            <div className="about-full-wrapper">
+
+              {/* MAIN FULL WIDTH CARD */}
+              <div className="about-full-card">
+
+                {/* <span className="about-badge"></span> */}
+
+                <h3>Creative Planning Professional Execution.</h3>
+
+                <p>
+                  Incorporated on 11th February 2025, SwiftKey Development Limited
+                  was established with a vision to deliver premium construction and
+                  hospitality solutions tailored for modern commercial environments.
+                </p>
+
+                <p>
+                  We specialize in commercial kitchen construction, stainless steel
+                  fabrication, restaurant interiors, fit-outs, and maintenance
+                  services for hotels, restaurants, cafés, bars, institutions,
+                  and food-service establishments.
+                </p>
+
+                <p>
+                  Our team focuses on combining functionality, durability,
+                  hygiene, and modern aesthetics to create spaces that perform
+                  efficiently while maintaining a premium appearance.
+                </p>
+
+                <p>
+                  With a commitment to professionalism, innovation, and long-term
+                  client relationships, we ensure every project is delivered with
+                  dependable execution, exceptional craftsmanship, and ongoing support.
+                </p>
+
+              </div>
+
+              {/* FEATURE CARDS */}
+              <div className="about-cards-grid">
+
+                <div className="about-mini-card">
+                  <span>Design</span>
+
+                  <strong>Smart Planning</strong>
+
+                  <small>
+                    Efficient layouts designed for smooth day-to-day operations.
+                  </small>
+                </div>
+
+                <div className="about-mini-card">
+                  <span>Build</span>
+
+                  <strong>Premium Quality</strong>
+
+                  <small>
+                    Durable materials, modern finishes, and professional craftsmanship.
+                  </small>
+                </div>
+
+                <div className="about-mini-card">
+                  <span>Support</span>
+
+                  <strong>Reliable Maintenance</strong>
+
+                  <small>
+                    Long-term technical support to keep operations running efficiently.
+                  </small>
+                </div>
+
+              </div>
+
             </div>
 
-            <div className="about-floating-column">
-              <div className="about-mini-card float-one">
-                <span>Design</span>
-                <strong>Smart Layouts</strong>
-                <small>Practical spaces planned for real daily operations.</small>
-              </div>
-              <div className="about-mini-card float-two">
-                <span>Build</span>
-                <strong>Premium Finish</strong>
-                <small>Modern interiors with durable materials and clean detailing.</small>
-              </div>
-              <div className="about-mini-card float-three">
-                <span>Care</span>
-                <strong>Long-Term Support</strong>
-                <small>Maintenance support for smooth and reliable performance.</small>
-              </div>
-            </div>
-
-            <aside className="identity-panel">
-              <h3>Company Details</h3>
-              <dl>
-                <div>
-                  <dt>Legal Status</dt>
-                  <dd>Private Limited Company</dd>
-                </div>
-                <div>
-                  <dt>Incorporation</dt>
-                  <dd>11th February 2025</dd>
-                </div>
-                <div>
-                  <dt>Certificate Issued</dt>
-                  <dd>4th April 2025</dd>
-                </div>
-                <div>
-                  <dt>KRA PIN</dt>
-                  <dd>P052403621Q</dd>
-                </div>
-              </dl>
-            </aside>
           </div>
         </section>
 
@@ -609,22 +686,33 @@ function App() {
               durable finishes, and polished customer-facing environments.
             </p>
           </div>
+          <div className="projects-slider">
+            <div className="projects-track">
 
-          <div className="project-filters" role="tablist" aria-label="Project categories">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                role="tab"
-                aria-selected={activeCategory === cat}
-                className={`filter-pill ${activeCategory === cat ? 'is-active' : ''}`}
-                onClick={() => setActiveCategory(cat)}
-              >
-                {cat}
-              </button>
-            ))}
+              {[...projects, ...projects].map((project, index) => (
+                <div className="project-slide-card" key={index}>
+
+                  <div className="project-image">
+                    <img src={project.image} alt={project.title} />
+                  </div>
+
+                  <div className="project-content">
+                    <span className="project-category">
+                      {project.category}
+                    </span>
+
+                    <h3>{project.title}</h3>
+
+                    <p>{project.description}</p>
+                  </div>
+
+                </div>
+              ))}
+
+            </div>
           </div>
 
-          {activeProjectData && (
+          {/* {activeProjectData && (
             <div className="project-slider-shell">
               <button className="project-nav project-nav-left" onClick={projectPrev} aria-label="Previous project">
                 ‹
@@ -668,21 +756,7 @@ function App() {
                 ›
               </button>
             </div>
-          )}
-
-          <div className="project-mini-track">
-            {filteredProjects.map((project, index) => (
-              <button
-                key={project.name}
-                className={`project-thumb ${index === activeProject ? 'is-active' : ''}`}
-                onClick={() => setActiveProject(index)}
-                type="button"
-              >
-                <img src={project.image} alt="" loading="lazy" />
-                <span>{project.name}</span>
-              </button>
-            ))}
-          </div>
+          )} */}
         </section>
 
         {/* ======= INDUSTRIES ======= */}
@@ -722,10 +796,62 @@ function App() {
               </p>
 
               <div className="contact-info-cards">
-                <a href="mailto:tarun@swiftkey.co.ke">tarun@swiftkey.co.ke</a>
-                <span>P.O. Box 76560-00508, Nairobi, Kenya</span>
-                <span>KRA PIN: P052403621Q</span>
+
+                {/* EMAIL */}
+                <a
+                  href="mailto:swiftkeydevelopment@gmail.com"
+                  className="info-card"
+                >
+                  <div className="info-icon">
+                    ICON
+                  </div>
+
+                  <div className="info-text">
+                    <span className="info-label">Email Address</span>
+                    <span className="info-value">
+                      swiftkeydevelopment@gmail.com
+                    </span>
+                  </div>
+                </a>
+
+                {/* ADDRESS */}
+                <div className="info-card">
+
+                  <div className="info-icon">
+                    LOCATION ICON
+                  </div>
+
+                  <div className="info-text">
+                    <span className="info-label">Postal Address</span>
+
+                    <span className="info-value">
+                      P.O. Box 76560-00508, Nairobi, Kenya
+                    </span>
+                  </div>
+
+                </div>
+
+                {/* TAX */}
+                <div className="info-card">
+
+                  <div className="info-icon">
+                    TAX ICON
+                  </div>
+
+                  <div className="info-text">
+                    <span className="info-label">
+                      Tax Registration
+                    </span>
+
+                    <span className="info-value">
+                      KRA PIN: P052403621Q
+                    </span>
+                  </div>
+
+
+                </div>
               </div>
+
             </div>
 
             <form className="query-form" onSubmit={handleQuerySubmit}>
@@ -733,7 +859,9 @@ function App() {
               <input type="email" placeholder="Your Email" required />
               <input type="text" placeholder="Subject" />
               <textarea placeholder="Write your query..." rows="5" required />
-              <button type="submit">Send Query</button>
+              <div className="form-actions">
+                <button type="submit">Send Query</button>
+              </div>
             </form>
           </div>
         </section>
@@ -742,20 +870,20 @@ function App() {
       {/* ======= FOOTER ======= */}
       <footer className="footer">
         <div>
-          <a className="brand footer-brand" href="#home" aria-label="SwiftKey home">
-            <span className="brand-mark">SK</span>
-            <span>
-              <strong>SwiftKey</strong>
-              <small>Development Limited</small>
-            </span>
+          <a className="brand" href="#home" aria-label="SwiftKey Development Limited">
+            <img
+              src="/assets/image copy 2.png"
+              alt="SwiftKey Development Limited"
+              className="contact-logo"
+            />
           </a>
           <p>Building quality solutions for construction and hospitality spaces across Kenya.</p>
         </div>
 
         <address>
           <strong>Contact Information</strong>
-          <span>P.O. Box 76560-00508, Nairobi, Kenya</span>
-          <a href="mailto:tarun@swiftkey.co.ke">tarun@swiftkey.co.ke</a>
+          <span>+254 708 022458 / +254 720 554611</span>
+          <a href="mailto:tarun@swiftkey.co.ke">swiftkeydevelopment@gmail.com</a>
           <span>KRA PIN: P052403621Q</span>
         </address>
 
