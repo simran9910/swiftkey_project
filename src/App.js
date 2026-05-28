@@ -82,10 +82,10 @@ const services = [
     'Civil & Building Construction',
     'General civil works, structural and finishing works, renovations, remodeling, and commercial construction delivery.',
   ],
-  [
-    'Metal Fabrication',
-    'Stainless steel shelving, counters, hoods, cabinets, workstations, and custom metal works for hygiene compliance.',
-  ],
+  // [
+  //   'Metal Fabrication',
+  //   'Stainless steel shelving, counters, hoods, cabinets, workstations, and custom metal works for hygiene compliance.',
+  // ],
   [
     'Fit-Outs',
     'Complete kitchen fit-outs, fabricated unit installation, fixtures, and hospitality or commercial interior fit-outs.',
@@ -98,143 +98,87 @@ const services = [
 
 const projects = [
   {
-    image: '/assets/artcafe.jpeg',
-    category: 'Artcafe',
-    scope: 'Restaurant fit-out and dining environment',
+    image: '/assets/project-joto-ramen.png',
+    category: 'Joto Ramen Japanese Restaurant',
+    scope: 'Japanese restaurant at 3 locations: Kenrail Tower Westlands, Lavington Mall, and Alchemist Bar Westlands',
     points: [
-      'Designed and developed a modern restaurant space focused on delivering a premium dining experience.',
-      'Planned an efficient layout that supports smooth customer flow and optimized service operations.',
-      'Used high-quality materials and refined finishes to create a stylish and comfortable environment.',
-      'Implemented ambient and feature lighting to enhance the dining atmosphere and highlight key areas.',
-    ],
-  },
-  {
-    image: '/assets/cakecity.jpeg',
-    category: 'Cake City Luqman Petrol Station',
-    scope: 'Premium café design and customer experience',
-    points: [
-      'Created a contemporary café interior with elegant seating and warm ambience.',
-      'Designed efficient service and kitchen layouts for smooth workflow.',
-      'Integrated decorative lighting and modern textures for a premium visual appeal.',
-      'Focused on customer comfort with functional and aesthetic furniture placement.',
-    ],
-  },
-  {
-    image: '/assets/image2.jpeg',
-    category: 'Commercial Restaurant Design',
-    scope: 'Restaurant branding and interior execution',
-    points: [
-      'Developed a visually appealing dining environment with modern finishes.',
-      'Optimized customer movement and staff operational efficiency.',
-      'Used custom lighting concepts to enhance mood and branding.',
-      'Delivered a durable and stylish commercial dining setup.',
-    ],
-  },
-  {
-    image: '/assets/artcafe.jpeg',
-    category: 'Artcaffe Redhill',
-    scope: 'Restaurant fit-out and dining environment',
-    points: [
-      'Designed and developed a modern restaurant space focused on delivering a premium dining experience.',
-      'Planned an efficient layout that supports smooth customer flow and optimized service operations.',
-      'Used high-quality materials and refined finishes to create a stylish and comfortable environment.',
-      'Implemented ambient and feature lighting to enhance the dining atmosphere and highlight key areas.',
-    ],
-  },
-  {
-    image: '/assets/project-cake-city.png',
-    category: 'Bakery & Dessert Spaces',
-    scope: 'Bakery retail planning and display counters',
-    points: [
-      'Designed a premium bakery retail space focused on creating a warm and welcoming customer atmosphere.',
-      'Optimized the store layout to improve product visibility and enhance the overall shopping flow.',
-      'Used high-quality materials and elegant finishes to build a modern and durable interior.',
-      'Implemented focused lighting solutions to highlight cakes and display counters effectively.',
-      'Delivered a visually appealing bakery environment that aligns with brand identity.',
-    ],
-  },
-  {
-    image: '/assets/project-art-caffe.png',
-    category: 'Contemporary Café Interiors',
-    scope: 'Cafe interior and commercial hospitality space',
-    points: [
-      'Developed a stylish café interior combining modern design with a comfortable customer experience.',
-      'Planned a functional layout that balances seating space and service efficiency.',
-      'Incorporated premium textures, materials, and décor elements to create a sophisticated ambiance.',
-      'Enhanced the space with strategic lighting and aesthetic design details.',
-      'Created an inviting café environment that encourages customers to relax and socialize.',
-    ],
-  },
-  {
-    image: '/assets/project-cake-city-nord.png',
-    category: 'Retail Bakery Architecture',
-    scope: 'Retail bakery outlet and showcase design',
-    points: [
-      'Developed a stylish retail shop with a modern, welcoming ambiance.',
-      'Designed open-plan layouts to optimize product display and customer flow.',
-      'Used premium finishes and durable materials to ensure a high-quality shopping environment.',
-      'Integrated attractive lighting and décor to highlight products and enhance the shopping experience.',
-      'Delivered a functional and aesthetically pleasing store aligned with brand identity.',
+      'Constructed interiors inspired by traditional Japanese minimalism across three strategic locations.',
+      'Developed dining setups tailored for authentic ramen experiences with consistent branding.',
+      'Integrated natural materials and subtle lighting to reflect Japanese culture.',
+      'Optimized floor plans to balance seating capacity and comfort at each location.',
+      'Delivered modern yet culturally rooted dining spaces with precision.',
     ],
   },
   {
     image: '/assets/project-artcaffe-redhill.png',
-    category: 'Premium Coffee Spaces',
-    scope: 'Cozy suburban cafe construction and fit-out',
+    category: 'Artcaffe',
+    scope: 'Premium café chain at Redhill, Lavington, Kisumu, Nanyuki, and Enaki',
     points: [
-      'Executed a modern café construction with natural lighting and elegant finishes.',
-      'Created versatile seating layouts to optimize both space and customer flow.',
-      'Installed premium flooring, wall treatments, and ceiling designs for a stylish ambiance.',
-      'Integrated cozy and functional interior elements tailored to café culture.',
-      'Delivered the project on schedule with high-quality construction standards.',
+      'Designed and developed modern restaurant spaces focused on delivering premium dining experiences.',
+      'Planned efficient layouts supporting smooth customer flow and optimized service operations.',
+      'Used high-quality materials and refined finishes to create stylish and comfortable environments.',
+      'Implemented ambient and feature lighting to enhance dining atmosphere across all locations.',
+      'Maintained consistent brand identity while adapting to each location\'s unique characteristics.',
     ],
   },
   {
-    image: '/assets/project-cake-city-luqman.png',
-    category: 'Express Food Outlet Design',
-    scope: 'Express bakery fit-out and layout planning',
+    image: '/assets/project-cake-city.png',
+    category: 'Cake City',
+    scope: 'Bakery outlets at Luqman Mall, Nord Mall Ruiru, TRM Mall, Ruaka Mall, and Imaara Mall',
     points: [
-      'Developed a stylish bakery outlet with functionality and customer comfort in focus.',
-      'Constructed interiors that blend elegance with Cake City branding.',
-      'Optimized seating and service areas for smooth customer flow.',
-      'Installed durable finishes ensuring long-lasting usability.',
-      'Delivered the project within strict deadlines and quality benchmarks.',
-    ],
-  },
-  {
-    image: '/assets/project-mammam-vietnamese.png',
-    category: 'Ethnic Restaurant Spaces',
-    scope: 'Ethnic dining construction and thematic interior',
-    points: [
-      'Executed construction reflecting authentic Vietnamese dining culture.',
-      'Applied modern interior finishes to enhance guest comfort and style.',
-      'Constructed functional dining areas with efficient seating arrangements.',
-      'Integrated premium materials to balance tradition with modern design.',
-      'Delivered a unique restaurant space aligned with the client cultural theme.',
-    ],
-  },
-  {
-    image: '/assets/project-joto-ramen.png',
-    category: 'Japanese Dining Concepts',
-    scope: 'Thematic restaurant interior and noodle bar layout',
-    points: [
-      'Constructed interiors inspired by traditional Japanese minimalism.',
-      'Developed a dining setup tailored for authentic ramen experiences.',
-      'Integrated natural materials and subtle lighting to reflect Japanese culture.',
-      'Optimized floor plan to balance seating capacity and comfort.',
-      'Delivered a modern yet culturally rooted dining space with precision.',
+      'Designed premium bakery retail spaces focused on creating warm and welcoming customer atmospheres.',
+      'Optimized store layouts to improve product visibility and enhance overall shopping flow.',
+      'Used high-quality materials and elegant finishes to build modern and durable interiors.',
+      'Implemented focused lighting solutions to highlight cakes and display counters effectively.',
+      'Delivered visually appealing bakery environments aligned with brand identity across multiple malls.',
     ],
   },
   {
     image: '/assets/hero-showroom.png',
-    category: 'Civil & Metal Engineering',
-    scope: 'Commercial kitchen construction and metal fabrication',
+    category: 'Dijo Restaurant',
+    scope: 'French cuisine restaurant at Mandrake, Westlands',
     points: [
-      'Specialized in commercial construction and metal fabrication for hospitality spaces.',
-      'Executed fit-outs and structural work for cafes, restaurants, bars, and hotels.',
-      'Delivered high-quality finishes and durable solutions for dynamic interiors.',
-      'Provided complete maintenance solutions ensuring operational efficiency.',
-      'Completed projects on schedule while maintaining superior construction standards.',
+      'Developed a sophisticated French dining interior combining elegance with modern design.',
+      'Planned functional layouts balancing intimate seating with efficient service operations.',
+      'Incorporated premium textures, materials, and décor elements to create refined ambiance.',
+      'Enhanced the space with strategic lighting and aesthetic design details.',
+      'Created an upscale dining environment reflecting French culinary excellence.',
+    ],
+  },
+  {
+    image: '/assets/project-mammam-vietnamese.png',
+    category: 'Mammam Restaurant',
+    scope: 'Vietnamese cuisine at Mwanzi Market Westlands and MyTown Mall Karen',
+    points: [
+      'Executed construction reflecting authentic Vietnamese dining culture at two locations.',
+      'Applied modern interior finishes to enhance guest comfort and style.',
+      'Constructed functional dining areas with efficient seating arrangements.',
+      'Integrated premium materials to balance tradition with modern design.',
+      'Delivered unique restaurant spaces aligned with Vietnamese cultural themes.',
+    ],
+  },
+  {
+    image: '/assets/kangauri.jpeg',
+    category: 'Okia Café',
+    scope: 'Vietnamese café at Riverside Road',
+    points: [
+      'Developed a stylish Vietnamese café with modern, welcoming ambiance.',
+      'Designed open-plan layouts to optimize customer flow and comfort.',
+      'Used premium finishes and durable materials to ensure high-quality environment.',
+      'Integrated attractive lighting and décor to enhance the café experience.',
+      'Delivered a functional and aesthetically pleasing space aligned with Vietnamese café culture.',
+    ],
+  },
+  {
+    image: '/assets/artcafe.jpeg',
+    category: 'Alchemist Bar',
+    scope: 'Bar and entertainment venue at Westlands',
+    points: [
+      'Executed modern bar construction with dynamic lighting and elegant finishes.',
+      'Created versatile seating and standing areas to optimize space and customer flow.',
+      'Installed premium flooring, wall treatments, and ceiling designs for stylish ambiance.',
+      'Integrated entertainment-focused interior elements tailored to nightlife culture.',
+      'Delivered the project on schedule with high-quality construction standards.',
     ],
   },
 ];
@@ -409,23 +353,40 @@ function App() {
 
         <nav className="nav-links" aria-label="Main navigation">
           <a href="#home">
-            <Icon name="home" />
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
             Home
           </a>
           <a href="#about">
-            <Icon name="about" />
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
             About
           </a>
           <a href="#services">
-            <Icon name="services" />
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
             Services
           </a>
           <a href="#projects">
-            <Icon name="projects" />
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
             Projects
           </a>
           <a href="#contact">
-            <Icon name="contact" />
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
             Contact Us
           </a>
 
@@ -503,9 +464,8 @@ function App() {
           <div className="hero-media" aria-hidden="true">
             {heroSlides.map((item, index) => (
               <div
-                className={`hero-slide ${transitionType} ${
-                  index === activeSlide ? 'is-active' : ''
-                }`}
+                className={`hero-slide ${transitionType} ${index === activeSlide ? 'is-active' : ''
+                  }`}
                 key={`${item.image}-${index}`}
               >
                 <div className="hero-slide-slices">
@@ -582,7 +542,7 @@ function App() {
           </div>
 
           <div className="stat-item">
-            <strong>12+</strong>
+            <strong>20+</strong>
             <span>Projects Delivered</span>
           </div>
 
@@ -619,20 +579,15 @@ function App() {
                 <h3>Creative Planning Professional Execution.</h3>
 
                 <p>
-                  Incorporated on 11th February 2025, SwiftKey Development Limited was
-                  established with a vision to deliver premium construction and hospitality
-                  solutions tailored for modern commercial environments.
+                  Incorporated on 11th February 2025, SwiftKey Development Limited was founded with a vision to redefine modern commercial spaces through innovative construction.
                 </p>
 
                 <p>
-                  We specialize in commercial kitchen construction, stainless steel
-                  fabrication, restaurant interiors, fit-outs, and maintenance services for
-                  hotels, restaurants, cafés, bars, institutions, and food-service
-                  establishments.
+                  We specialize in commercial fabrication and stainless steel solutions, delivering premium restaurant interiors, fit-outs, and maintenance services for hotels, restaurants, cafés, bars, institutions, and modern food-service establishments
                 </p>
 
                 <p>
-                  Our team focuses on combining functionality, durability, hygiene, and
+                  Our team focuses on combining functionality, durability and
                   modern aesthetics to create spaces that perform efficiently while
                   maintaining a premium appearance.
                 </p>
@@ -675,7 +630,7 @@ function App() {
           <div className="section-heading compact">
             <p className="eyebrow">Core Specialization</p>
 
-            <h2>Commercial kitchen spaces designed from concept to completion.</h2>
+            <h2>Commercial fabrication spaces designed from concept to completion.</h2>
 
             <p>
               Our solutions support efficiency, safety, hygiene, durability, and modern design
@@ -688,7 +643,8 @@ function App() {
             <span>Practical layouts</span>
             <span>Quality materials</span>
             <span>Skilled workmanship</span>
-            <span>Safety &amp; hygiene standards</span>
+            <span> Safety Standards</span>
+            {/* <span>Safety &amp; hygiene standards</span> */}
           </div>
         </section>
 
@@ -735,25 +691,25 @@ function App() {
             </p>
           </div>
 
-        <div className="projects-slider">
-  <div className="projects-track">
-    {filteredProjects.map((project, index) => (
-      <div className="project-slide-card" key={`${project.category}-${index}`}>
-        <div className="project-image">
-          <img src={project.image} alt={project.category} />
-        </div>
+          <div className="projects-slider">
+            <div className="projects-track">
+              {filteredProjects.map((project, index) => (
+                <div className="project-slide-card" key={`${project.category}-${index}`}>
+                  <div className="project-image">
+                    <img src={project.image} alt={project.category} />
+                  </div>
 
-        <div className="project-content">
-          <span className="project-category">{project.category}</span>
+                  <div className="project-content">
+                    <span className="project-category">{project.category}</span>
 
-          {/* <h3>{project.category}</h3> */}
+                    {/* <h3>{project.category}</h3> */}
 
-          <p>{project.scope}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                    <p>{project.scope}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
           <button className="project-next-btn" type="button" onClick={projectNext}>
             Next Project
           </button>
@@ -811,7 +767,7 @@ function App() {
 
               <span className="contact-label">Email</span>
 
-              <span className="contact-value">swiftkeydevelopment@gmail.com</span>
+              <span className="contact-value">tarun@swiftkey.co.ke</span>
             </a>
 
             <a
@@ -828,7 +784,7 @@ function App() {
               <span className="contact-value">
                 +254 708 022458
                 <br />
-                +254 720 554611
+               
               </span>
             </a>
 
@@ -860,20 +816,31 @@ function App() {
           </a>
 
           <p>
-            Building quality solutions for construction and hospitality spaces across Kenya.
+            Delivering quality solutions for construction and hospitality spaces across Kenya.
           </p>
         </div>
 
         <address>
-          <strong>Contact Information</strong>
+          <strong>
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Contact Information
+          </strong>
 
           <div className="footer-contact-item">
-            <Icon name="phone" />
-            <span>+254 708 022458 / +254 720 554611</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 21 18.91V21z" />
+            </svg>
+            <span>+254 708 022458 </span>
           </div>
 
           <div className="footer-contact-item">
-            <Icon name="mail" />
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="2" y="4" width="20" height="16" rx="3" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
             <a href="mailto:swiftkeydevelopment@gmail.com">
               swiftkeydevelopment@gmail.com
             </a>
@@ -881,23 +848,43 @@ function App() {
         </address>
 
         <div className="footer-links">
-          <strong>Navigate</strong>
+          <strong>
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+            Navigate
+          </strong>
 
           <nav>
             <a href="#home">
-              <Icon name="home" />
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
               Home
             </a>
             <a href="#about">
-              <Icon name="about" />
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
+              </svg>
               About
             </a>
             <a href="#services">
-              <Icon name="services" />
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
               Services
             </a>
             <a href="#projects">
-              <Icon name="projects" />
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+              </svg>
               Projects
             </a>
 
@@ -906,7 +893,11 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon name="external" />
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
               Visit Main Website
             </a>
           </nav>
