@@ -3,10 +3,10 @@ import './App.css';
 
 const transitionTypes = ['bars', 'vortex', 'blinds', 'checkerboard', 'box'];
 
-const getRandomTransition = () => transitionTypes[Math.floor(Math.random() * transitionTypes.length)];
+const getRandomTransition = () =>
+  transitionTypes[Math.floor(Math.random() * transitionTypes.length)];
 
 const heroSlides = [
-
   {
     image: '/assets/cakecity.jpeg',
     label: 'Welcome',
@@ -15,8 +15,6 @@ const heroSlides = [
     subtitle: 'Your premium construction partner',
     text: 'We deliver high-quality construction and hospitality solutions across Kenya.',
   },
-
-
   {
     image: '/assets/artcafe.jpeg',
     label: 'Luxury Construction',
@@ -25,7 +23,6 @@ const heroSlides = [
     subtitle: 'Premium hospitality and commercial interiors',
     text: 'We create elegant restaurants, cafés, and hospitality spaces with modern construction solutions.',
   },
-
   {
     image: '/assets/kangauri.jpeg',
     label: 'Interior Excellence',
@@ -34,7 +31,6 @@ const heroSlides = [
     subtitle: 'Designed for comfort and functionality',
     text: 'SwiftKey delivers stylish interiors with durable finishes and exceptional customer experiences.',
   },
-
   {
     image: '/assets/image22.jpeg',
     label: 'Trusted Engineering',
@@ -43,7 +39,6 @@ const heroSlides = [
     subtitle: 'Reliable execution with premium quality',
     text: 'From planning to execution, we provide high-end construction and fit-out services across Kenya.',
   },
-
   {
     image: '/assets/project-mammam-vietnamese.png',
     label: 'Commercial Kitchen Specialists',
@@ -68,16 +63,6 @@ const heroSlides = [
     subtitle: 'Durable finishes crafted for high-use commercial spaces.',
     text: 'From stainless steel fabrication to interior fixtures, every detail is selected for hygiene, longevity, and visual quality.',
   },
-
-  {
-    image: '/assets/project-cake-city-luqman.png',
-    label: 'Food Service Fit-Outs',
-    titleLine1: 'Built',
-    titleLine2: 'To Last.',
-    subtitle: 'Durable finishes crafted for high-use commercial spaces.',
-    text: 'From stainless steel fabrication to interior fixtures, every detail is selected for hygiene, longevity, and visual quality.',
-  },
-
   {
     image: '/assets/project-artcaffe-redhill.png',
     label: 'Premium Interior Solutions',
@@ -89,18 +74,31 @@ const heroSlides = [
 ];
 
 const services = [
-  ['Design Services', 'Commercial kitchen design, space planning, functional layouts, and custom designs tailored to client operations and standards.'],
-  ['Civil & Building Construction', 'General civil works, structural and finishing works, renovations, remodeling, and commercial construction delivery.'],
-  ['Metal Fabrication', 'Stainless steel shelving, counters, hoods, cabinets, workstations, and custom metal works for hygiene compliance.'],
-  ['Fit-Outs', 'Complete kitchen fit-outs, fabricated unit installation, fixtures, and hospitality or commercial interior fit-outs.'],
-  ['Maintenance Services', 'Preventive and corrective maintenance, repairs, upgrades, and ongoing support for reliable long-term performance.'],
+  [
+    'Design Services',
+    'Commercial kitchen design, space planning, functional layouts, and custom designs tailored to client operations and standards.',
+  ],
+  [
+    'Civil & Building Construction',
+    'General civil works, structural and finishing works, renovations, remodeling, and commercial construction delivery.',
+  ],
+  [
+    'Metal Fabrication',
+    'Stainless steel shelving, counters, hoods, cabinets, workstations, and custom metal works for hygiene compliance.',
+  ],
+  [
+    'Fit-Outs',
+    'Complete kitchen fit-outs, fabricated unit installation, fixtures, and hospitality or commercial interior fit-outs.',
+  ],
+  [
+    'Maintenance Services',
+    'Preventive and corrective maintenance, repairs, upgrades, and ongoing support for reliable long-term performance.',
+  ],
 ];
 
 const projects = [
-
   {
     image: '/assets/artcafe.jpeg',
-    name: 'Artcafe',
     category: 'Artcafe',
     scope: 'Restaurant fit-out and dining environment',
     points: [
@@ -110,10 +108,8 @@ const projects = [
       'Implemented ambient and feature lighting to enhance the dining atmosphere and highlight key areas.',
     ],
   },
-
   {
     image: '/assets/cakecity.jpeg',
-    name: 'The Golden Fork Café',
     category: 'Cake City Luqman Petrol Station',
     scope: 'Premium café design and customer experience',
     points: [
@@ -123,10 +119,8 @@ const projects = [
       'Focused on customer comfort with functional and aesthetic furniture placement.',
     ],
   },
-
   {
     image: '/assets/image2.jpeg',
-    name: 'Elite Dining Hub',
     category: 'Commercial Restaurant Design',
     scope: 'Restaurant branding and interior execution',
     points: [
@@ -136,10 +130,8 @@ const projects = [
       'Delivered a durable and stylish commercial dining setup.',
     ],
   },
-
   {
     image: '/assets/artcafe.jpeg',
-    name: 'Skyline Bistro Interiors',
     category: 'Artcaffe Redhill',
     scope: 'Restaurant fit-out and dining environment',
     points: [
@@ -149,10 +141,8 @@ const projects = [
       'Implemented ambient and feature lighting to enhance the dining atmosphere and highlight key areas.',
     ],
   },
-
   {
     image: '/assets/project-cake-city.png',
-    name: 'Cake City TRM',
     category: 'Bakery & Dessert Spaces',
     scope: 'Bakery retail planning and display counters',
     points: [
@@ -163,10 +153,8 @@ const projects = [
       'Delivered a visually appealing bakery environment that aligns with brand identity.',
     ],
   },
-
   {
     image: '/assets/project-art-caffe.png',
-    name: 'Art Caffe Lavington',
     category: 'Contemporary Café Interiors',
     scope: 'Cafe interior and commercial hospitality space',
     points: [
@@ -177,10 +165,8 @@ const projects = [
       'Created an inviting café environment that encourages customers to relax and socialize.',
     ],
   },
-
   {
     image: '/assets/project-cake-city-nord.png',
-    name: 'Cake City Nord Mall',
     category: 'Retail Bakery Architecture',
     scope: 'Retail bakery outlet and showcase design',
     points: [
@@ -191,10 +177,8 @@ const projects = [
       'Delivered a functional and aesthetically pleasing store aligned with brand identity.',
     ],
   },
-
   {
     image: '/assets/project-artcaffe-redhill.png',
-    name: 'Artcaffe Redhill',
     category: 'Premium Coffee Spaces',
     scope: 'Cozy suburban cafe construction and fit-out',
     points: [
@@ -205,10 +189,8 @@ const projects = [
       'Delivered the project on schedule with high-quality construction standards.',
     ],
   },
-
   {
     image: '/assets/project-cake-city-luqman.png',
-    name: 'Cake City Luqman Station',
     category: 'Express Food Outlet Design',
     scope: 'Express bakery fit-out and layout planning',
     points: [
@@ -219,10 +201,8 @@ const projects = [
       'Delivered the project within strict deadlines and quality benchmarks.',
     ],
   },
-
   {
     image: '/assets/project-mammam-vietnamese.png',
-    name: 'Mammam Vietnamese Dining',
     category: 'Ethnic Restaurant Spaces',
     scope: 'Ethnic dining construction and thematic interior',
     points: [
@@ -233,10 +213,8 @@ const projects = [
       'Delivered a unique restaurant space aligned with the client cultural theme.',
     ],
   },
-
   {
     image: '/assets/project-joto-ramen.png',
-    name: 'Joto Ramen House',
     category: 'Japanese Dining Concepts',
     scope: 'Thematic restaurant interior and noodle bar layout',
     points: [
@@ -247,10 +225,8 @@ const projects = [
       'Delivered a modern yet culturally rooted dining space with precision.',
     ],
   },
-
   {
     image: '/assets/hero-showroom.png',
-    name: 'Dijo Westland',
     category: 'Civil & Metal Engineering',
     scope: 'Commercial kitchen construction and metal fabrication',
     points: [
@@ -261,10 +237,7 @@ const projects = [
       'Completed projects on schedule while maintaining superior construction standards.',
     ],
   },
-
 ];
-
-const categories = ['All', 'Modern Interiors & Fit-outs', 'Civil & Metal Engineering'];
 
 const industries = [
   'Construction',
@@ -279,110 +252,87 @@ const industries = [
 
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [activeCategory, setActiveCategory] = useState('All');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [expandedProjects, setExpandedProjects] = useState({});
   const [scrolled, setScrolled] = useState(false);
   const [transitionType, setTransitionType] = useState('bars');
   const [activeProject, setActiveProject] = useState(0);
 
-  // Topbar scroll state
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
+
     window.addEventListener('scroll', onScroll, { passive: true });
+
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Auto-slide interval with random transition
   useEffect(() => {
     const timer = setInterval(() => {
       setTransitionType(getRandomTransition());
       setActiveSlide((current) => (current + 1) % heroSlides.length);
     }, 5800);
+
     return () => clearInterval(timer);
   }, []);
 
-  // IntersectionObserver for scroll-reveal
   useEffect(() => {
     const revealEls = document.querySelectorAll('.reveal');
+
     const observer = new IntersectionObserver(
-      (entries) => entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      }),
+      (entries) =>
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        }),
       { threshold: 0.08, rootMargin: '0px 0px -60px 0px' }
     );
+
     revealEls.forEach((el) => observer.observe(el));
+
     return () => observer.disconnect();
   }, []);
 
   const slideNext = () => {
     setTransitionType(getRandomTransition());
-    setActiveSlide((c) => (c + 1) % heroSlides.length);
+    setActiveSlide((current) => (current + 1) % heroSlides.length);
   };
 
   const slidePrev = () => {
     setTransitionType(getRandomTransition());
-    setActiveSlide((c) => (c - 1 + heroSlides.length) % heroSlides.length);
-  };
-
-  const toggleProjectExpand = (projectName) => {
-    setExpandedProjects((current) => ({
-      ...current,
-      [projectName]: !current[projectName],
-    }));
+    setActiveSlide((current) => (current - 1 + heroSlides.length) % heroSlides.length);
   };
 
   const slide = heroSlides[activeSlide];
 
   const filteredProjects = useMemo(() => {
-    return activeCategory === 'All'
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
-  }, [activeCategory]);
-
-  useEffect(() => {
-    setActiveProject(0);
-  }, [activeCategory]);
+    return projects;
+  }, []);
 
   useEffect(() => {
     if (!filteredProjects.length) return undefined;
+
     const timer = setInterval(() => {
       setActiveProject((current) => (current + 1) % filteredProjects.length);
     }, 4200);
+
     return () => clearInterval(timer);
   }, [filteredProjects.length]);
 
-  const activeProjectData = filteredProjects[activeProject];
-
   const projectNext = () => {
     if (!filteredProjects.length) return;
+
     setActiveProject((current) => (current + 1) % filteredProjects.length);
-  };
-
-  const projectPrev = () => {
-    if (!filteredProjects.length) return;
-    setActiveProject((current) => (current - 1 + filteredProjects.length) % filteredProjects.length);
-  };
-
-  const handleQuerySubmit = (event) => {
-    event.preventDefault();
-    alert('Thank you! Your query has been submitted.');
-    event.currentTarget.reset();
   };
 
   return (
     <div className="site-shell">
-      {/* Decorative Ambient Background Blobs */}
       <div className="ambient-blobs" aria-hidden="true">
         <div className="blob blob-1" />
         <div className="blob blob-2" />
         <div className="blob blob-3" />
       </div>
 
-      {/* ======= FIXED FLOATING HEADER ======= */}
       <header className={`topbar ${scrolled ? 'scrolled' : ''}`}>
         <a className="brand" href="#home" aria-label="SwiftKey Development Limited">
           <img
@@ -393,46 +343,15 @@ function App() {
         </a>
 
         <nav className="nav-links" aria-label="Main navigation">
-          <a href="#home">
-            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-              <polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-            Home
-          </a>
-          <a href="#about">
-            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="16" x2="12" y2="12"/>
-              <line x1="12" y1="8" x2="12.01" y2="8"/>
-            </svg>
-            About
-          </a>
-          <a href="#services">
-            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-            </svg>
-            Services
-          </a>
-          <a href="#projects">
-            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <rect x="3" y="3" width="7" height="7"/>
-              <rect x="14" y="3" width="7" height="7"/>
-              <rect x="14" y="14" width="7" height="7"/>
-              <rect x="3" y="14" width="7" height="7"/>
-            </svg>
-            Projects
-          </a>
-          <a href="#contact">
-            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-            Contact Us
-          </a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact Us</a>
 
-          <a className="header-cta" href="#contact">Request a Quote</a>
-
+          <a className="header-cta" href="#contact">
+            Request a Quote
+          </a>
         </nav>
 
         <button
@@ -440,6 +359,7 @@ function App() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle Navigation Menu"
           aria-expanded={isMobileMenuOpen}
+          type="button"
         >
           <span className="hamburger-line" />
           <span className="hamburger-line" />
@@ -448,95 +368,67 @@ function App() {
 
         <div className={`mobile-drawer ${isMobileMenuOpen ? 'is-open' : ''}`}>
           <nav className="mobile-nav-links">
-
             <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
               Home
             </a>
+
             <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="16" x2="12" y2="12"/>
-                <line x1="12" y1="8" x2="12.01" y2="8"/>
-              </svg>
               About
             </a>
+
             <a href="#services" onClick={() => setIsMobileMenuOpen(false)}>
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-              </svg>
               Services
             </a>
+
             <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <rect x="3" y="3" width="7" height="7"/>
-                <rect x="14" y="3" width="7" height="7"/>
-                <rect x="14" y="14" width="7" height="7"/>
-                <rect x="3" y="14" width="7" height="7"/>
-              </svg>
               Projects
             </a>
+
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              </svg>
               Contact
             </a>
-            <a className="mobile-header-cta" href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+
+            <a
+              className="mobile-header-cta"
+              href="#contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Request a Quote
             </a>
-          <a
-  href="https://swiftkey.co.ke/"
-  target="_blank"
-  rel="noopener noreferrer"
-  onClick={() => setIsMobileMenuOpen(false)}
->
-  <svg
-    width="18"
-    height="18"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    viewBox="0 0 24 24"
-  >
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-    <polyline points="15 3 21 3 21 9" />
-    <line x1="10" y1="14" x2="21" y2="3" />
-  </svg>
 
-  Visit Main Website
-</a>
-
+            <a
+              href="https://swiftkey.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Visit Main Website
+            </a>
           </nav>
         </div>
       </header>
 
       <main>
-        {/* ======= FULL-SCREEN CINEMATIC HERO SLIDER ======= */}
         <section className="hero-section" id="home" aria-label="Hero Showcase">
-          {/* Gradient overlay */}
           <div className="hero-overlay" aria-hidden="true" />
 
-          {/* Full-screen slide stack */}
           <div className="hero-media" aria-hidden="true">
             {heroSlides.map((item, index) => (
               <div
-                className={`hero-slide ${transitionType} ${index === activeSlide ? 'is-active' : ''}`}
+                className={`hero-slide ${transitionType} ${
+                  index === activeSlide ? 'is-active' : ''
+                }`}
                 key={`${item.image}-${index}`}
               >
                 <div className="hero-slide-slices">
                   <div className="image-slice slice-1">
                     <img src={item.image} alt="" />
                   </div>
+
                   <div className="image-slice slice-2">
                     <img src={item.image} alt="" />
                   </div>
+
                   <div className="image-slice slice-3">
                     <img src={item.image} alt="" />
                   </div>
@@ -545,94 +437,84 @@ function App() {
             ))}
           </div>
 
-          {/* Text overlay */}
           <div className="hero-copy-wrapper">
             <div key={activeSlide} className="hero-copy">
               <p className="eyebrow">{slide.label}</p>
+
               <h1>
                 <span className="h1-line line-1">{slide.titleLine1}</span>
                 <span className="h1-line line-2">{slide.titleLine2}</span>
               </h1>
+
               <p className="hero-lead">{slide.subtitle}</p>
               <p className="hero-text">{slide.text}</p>
+
               <div className="hero-actions">
-                <a className="primary-action" href="#contact" id="hero-cta-primary">Request Consultation</a>
-                <a className="secondary-action" href="#projects" id="hero-cta-secondary">View Projects ↓</a>
+                <a className="primary-action" href="#contact">
+                  Request Consultation
+                </a>
+
+                <a className="secondary-action" href="#projects">
+                  View Projects ↓
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Arrow controls */}
-          <button className="slider-arrow arrow-prev" onClick={slidePrev} aria-label="Previous Slide">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+          <button
+            className="slider-arrow arrow-prev"
+            onClick={slidePrev}
+            aria-label="Previous Slide"
+            type="button"
+          >
+            ‹
           </button>
-          <button className="slider-arrow arrow-next" onClick={slideNext} aria-label="Next Slide">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+
+          <button
+            className="slider-arrow arrow-next"
+            onClick={slideNext}
+            aria-label="Next Slide"
+            type="button"
+          >
+            ›
           </button>
 
           <div className="transition-chip">{transitionType} transition</div>
 
-          {/* Bottom controls bar */}
-          {/* <div className="slider-controls-bottom">
-            <div className="slider-dots">
-              {heroSlides.map((item, index) => (
-                <button
-                  aria-label={`Go to slide ${index + 1}: ${item.label}`}
-                  className={index === activeSlide ? 'is-active' : ''}
-                  key={item.label}
-                  onClick={() => { setTransitionType(getRandomTransition()); setActiveSlide(index); }}
-                  type="button"
-                />
-              ))}
-            </div>
-            <div className="slider-progress-track">
-              <div key={activeSlide} className="slider-progress-bar" />
-            </div>
-            <span className="slide-count-display">
-              <strong>{String(activeSlide + 1).padStart(2, '0')}</strong>
-              <em> / {String(heroSlides.length).padStart(2, '0')}</em>
-            </span>
-          </div> */}
-
-          {/* Scroll indicator */}
           <div className="scroll-indicator" aria-hidden="true">
             <div className="scroll-indicator-line" />
             <span>Scroll</span>
           </div>
         </section>
 
-        {/* ======= STATS BAND ======= */}
         <section className="stats-band reveal" aria-label="Company highlights">
           <div className="stat-item">
             <strong>2025</strong>
             <span>Incorporated</span>
           </div>
+
           <div className="stat-item">
             <strong>12+</strong>
             <span>Projects Delivered</span>
           </div>
+
           <div className="stat-item">
             <strong>5</strong>
             <span>Core Service Lines</span>
           </div>
+
           <div className="stat-item">
             <strong>End-To-End</strong>
             <span>Concept to Completion</span>
           </div>
         </section>
 
-
-        {/* ======= ABOUT ======= */}
         <section className="section about-section reveal" id="about">
-
-          {/* SECTION HEADING */}
           <div className="section-heading about-heading">
             <div>
               <p className="eyebrow">About Us</p>
 
-              <h2>
-                Built for businesses that demand quality, reliability, and precision.
-              </h2>
+              <h2>Built for businesses that demand quality, reliability, and precision.</h2>
             </div>
 
             <p className="about-top-text">
@@ -643,63 +525,47 @@ function App() {
             </p>
           </div>
 
-          {/* ABOUT CONTENT */}
           <div className="about-showcase">
-
             <div className="about-full-wrapper">
-
-              {/* MAIN FULL WIDTH CARD */}
               <div className="about-full-card">
-
-                {/* <span className="about-badge"></span> */}
-
                 <h3>Creative Planning Professional Execution.</h3>
 
                 <p>
-                  Incorporated on 11th February 2025, SwiftKey Development Limited
-                  was established with a vision to deliver premium construction and
-                  hospitality solutions tailored for modern commercial environments.
+                  Incorporated on 11th February 2025, SwiftKey Development Limited was
+                  established with a vision to deliver premium construction and hospitality
+                  solutions tailored for modern commercial environments.
                 </p>
 
                 <p>
                   We specialize in commercial kitchen construction, stainless steel
-                  fabrication, restaurant interiors, fit-outs, and maintenance
-                  services for hotels, restaurants, cafés, bars, institutions,
-                  and food-service establishments.
+                  fabrication, restaurant interiors, fit-outs, and maintenance services for
+                  hotels, restaurants, cafés, bars, institutions, and food-service
+                  establishments.
                 </p>
 
                 <p>
-                  Our team focuses on combining functionality, durability,
-                  hygiene, and modern aesthetics to create spaces that perform
-                  efficiently while maintaining a premium appearance.
+                  Our team focuses on combining functionality, durability, hygiene, and
+                  modern aesthetics to create spaces that perform efficiently while
+                  maintaining a premium appearance.
                 </p>
 
                 <p>
-                  With a commitment to professionalism, innovation, and long-term
-                  client relationships, we ensure every project is delivered with
-                  dependable execution, exceptional craftsmanship, and ongoing support.
+                  With a commitment to professionalism, innovation, and long-term client
+                  relationships, we ensure every project is delivered with dependable
+                  execution, exceptional craftsmanship, and ongoing support.
                 </p>
-
               </div>
 
-              {/* FEATURE CARDS */}
               <div className="about-cards-grid">
-
                 <div className="about-mini-card">
                   <span>Design</span>
-
                   <strong>Smart Planning</strong>
-
-                  <small>
-                    Efficient layouts designed for smooth day-to-day operations.
-                  </small>
+                  <small>Efficient layouts designed for smooth day-to-day operations.</small>
                 </div>
 
                 <div className="about-mini-card">
                   <span>Build</span>
-
                   <strong>Premium Quality</strong>
-
                   <small>
                     Durable materials, modern finishes, and professional craftsmanship.
                   </small>
@@ -707,31 +573,28 @@ function App() {
 
                 <div className="about-mini-card">
                   <span>Support</span>
-
                   <strong>Reliable Maintenance</strong>
-
                   <small>
                     Long-term technical support to keep operations running efficiently.
                   </small>
                 </div>
-
               </div>
-
             </div>
-
           </div>
         </section>
 
-        {/* ======= SPECIALIZATION ======= */}
         <section className="section specialization-section reveal">
           <div className="section-heading compact">
             <p className="eyebrow">Core Specialization</p>
+
             <h2>Commercial kitchen spaces designed from concept to completion.</h2>
+
             <p>
-              Our solutions support efficiency, safety, hygiene, durability, and modern design for
-              active hospitality and food service environments.
+              Our solutions support efficiency, safety, hygiene, durability, and modern design
+              for active hospitality and food service environments.
             </p>
           </div>
+
           <div className="approach-grid">
             <span>Client-centered planning</span>
             <span>Practical layouts</span>
@@ -741,121 +604,81 @@ function App() {
           </div>
         </section>
 
-        {/* ======= SERVICES ======= */}
         <section className="section services-section reveal" id="services">
           <div className="section-heading">
             <div>
               <p className="eyebrow">Services</p>
+
               <h2>Professional delivery across every stage of the project.</h2>
             </div>
+
             <p>
-              We combine planning, construction, fabrication, installation, and maintenance into a
-              single coordinated workflow for commercial clients.
+              We combine planning, construction, fabrication, installation, and maintenance
+              into a single coordinated workflow for commercial clients.
             </p>
           </div>
 
           <div className="service-grid">
             {services.map(([title, text], index) => (
               <article className="service-card" key={title} style={{ '--stagger': index }}>
-                <span className="service-num">{String(index + 1).padStart(2, '0')}</span>
+                <span className="service-num">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+
                 <h3>{title}</h3>
+
                 <p>{text}</p>
               </article>
             ))}
           </div>
         </section>
 
-        {/* ======= PROJECTS ======= */}
         <section className="section projects-section reveal" id="projects">
           <div className="section-heading">
             <div>
               <p className="eyebrow">Recent Projects</p>
+
               <h2>Selected work across restaurants, cafes, and retail food spaces.</h2>
             </div>
+
             <p>
-              These projects show SwiftKey's focus on operational planning, practical execution,
-              durable finishes, and polished customer-facing environments.
+              These projects show SwiftKey&apos;s focus on operational planning, practical
+              execution, durable finishes, and polished customer-facing environments.
             </p>
           </div>
+
           <div className="projects-slider">
             <div className="projects-track">
-
-              {[...projects, ...projects].map((project, index) => (
-                <div className="project-slide-card" key={index}>
-
+              {[...filteredProjects, ...filteredProjects].map((project, index) => (
+                <div className="project-slide-card" key={`${project.name}-${index}`}>
                   <div className="project-image">
-                    <img src={project.image} alt={project.title} />
+                    <img src={project.image} alt={project.name} />
                   </div>
 
                   <div className="project-content">
-                    <span className="project-category">
-                      {project.category}
-                    </span>
+                    <span className="project-category">{project.category}</span>
 
-                    <h3>{project.title}</h3>
+                    <h3>{project.name}</h3>
 
-                    <p>{project.description}</p>
+                    <p>{project.scope}</p>
                   </div>
-
                 </div>
               ))}
-
             </div>
           </div>
 
-          {/* {activeProjectData && (
-            <div className="project-slider-shell">
-              <button className="project-nav project-nav-left" onClick={projectPrev} aria-label="Previous project">
-                ‹
-              </button>
-
-              <article className="featured-project-card" key={activeProjectData.name}>
-                <div className="featured-project-image">
-                  <img alt={activeProjectData.name} src={activeProjectData.image} loading="lazy" />
-                  <span className="project-category-tag">{activeProjectData.category}</span>
-                  <div className="project-shine" />
-                </div>
-
-                <div className="featured-project-content">
-                  <span className="project-scope">{activeProjectData.scope}</span>
-                  <h3>{activeProjectData.name}</h3>
-                  <ul className="project-points-list">
-                    {activeProjectData.points
-                      .slice(0, expandedProjects[activeProjectData.name] ? activeProjectData.points.length : 3)
-                      .map((point) => (
-                        <li key={point}>{point}</li>
-                      ))}
-                  </ul>
-
-                  {activeProjectData.points.length > 3 && (
-                    <button
-                      className="project-toggle-details-btn"
-                      onClick={() => toggleProjectExpand(activeProjectData.name)}
-                      aria-label={
-                        expandedProjects[activeProjectData.name]
-                          ? `Show less about ${activeProjectData.name}`
-                          : `Show all details about ${activeProjectData.name}`
-                      }
-                    >
-                      {expandedProjects[activeProjectData.name] ? 'Show Less ↑' : 'Show All Details ↓'}
-                    </button>
-                  )}
-                </div>
-              </article>
-
-              <button className="project-nav project-nav-right" onClick={projectNext} aria-label="Next project">
-                ›
-              </button>
-            </div>
-          )} */}
+          <button className="project-next-btn" type="button" onClick={projectNext}>
+            Next Project
+          </button>
         </section>
 
-        {/* ======= INDUSTRIES ======= */}
         <section className="section industries-section reveal">
           <div className="section-heading compact">
             <p className="eyebrow">Industries We Serve</p>
+
             <h2>Solutions for high-use commercial and hospitality environments.</h2>
           </div>
+
           <div className="industry-list">
             {industries.map((industry) => (
               <span key={industry}>{industry}</span>
@@ -863,69 +686,76 @@ function App() {
           </div>
         </section>
 
-        {/* ======= COMMITMENT BAND ======= */}
         <div className="commitment-band reveal">
           <div>
             <p className="eyebrow">Our Commitment</p>
+
             <h2>Excellence, transparency, and long-term project partnerships.</h2>
           </div>
+
           <p>
             We are committed to reliable execution, continuous improvement, modern design,
             regulatory awareness, and strong client relationships across every assignment.
           </p>
         </div>
 
-        {/* ======= CONTACT SECTION ======= */}
         <section className="section contact-section reveal" id="contact">
           <div className="contact-heading">
             <p className="eyebrow">Contact Us</p>
+
             <h2>Have any query? Ask us directly.</h2>
+
             <p className="contact-subtitle">
-              Share your project requirement, service question, quotation request, or any other query.
-              Our team will connect with you and guide you with the right solution.
+              Share your project requirement, service question, quotation request, or any
+              other query. Our team will connect with you and guide you with the right
+              solution.
             </p>
           </div>
 
           <div className="contact-cards-grid">
-            {/* EMAIL CARD */}
             <a
               href="mailto:swiftkeydevelopment@gmail.com"
               className="contact-card"
               aria-label="Send email to SwiftKey Development"
             >
-              <div className="contact-icon">
-                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
+              <div className="contact-icon">✉</div>
+
               <span className="contact-label">Email</span>
+
               <span className="contact-value">swiftkeydevelopment@gmail.com</span>
             </a>
 
-            {/* PHONE CARD */}
             <a
               href="tel:+254708022458"
               className="contact-card"
               aria-label="Call SwiftKey Development"
             >
-              <div className="contact-icon">
-                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 21 18.91V21z"/></svg>
-              </div>
+              <div className="contact-icon">☎</div>
+
               <span className="contact-label">Phone</span>
-              <span className="contact-value">+254 708 022458<br/>+254 720 554611</span>
+
+              <span className="contact-value">
+                +254 708 022458
+                <br />
+                +254 720 554611
+              </span>
             </a>
 
-            {/* ADDRESS CARD */}
             <div className="contact-card">
-              <div className="contact-icon">
-                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
+              <div className="contact-icon">📍</div>
+
               <span className="contact-label">Postal Address</span>
-              <span className="contact-value">P.O. Box 76560-00508<br/>Nairobi, Kenya</span>
+
+              <span className="contact-value">
+                P.O. Box 76560-00508
+                <br />
+                Nairobi, Kenya
+              </span>
             </div>
           </div>
         </section>
       </main>
 
-      {/* ======= FOOTER ======= */}
       <footer className="footer">
         <div>
           <a className="brand" href="#home" aria-label="SwiftKey Development Limited">
@@ -935,66 +765,40 @@ function App() {
               className="contact-logo"
             />
           </a>
-          <p>Building quality solutions for construction and hospitality spaces across Kenya.</p>
+
+          <p>
+            Building quality solutions for construction and hospitality spaces across Kenya.
+          </p>
         </div>
 
         <address>
           <strong>Contact Information</strong>
+
           <div className="footer-contact-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 21 18.91V21z"/>
-            </svg>
             <span>+254 708 022458 / +254 720 554611</span>
           </div>
+
           <div className="footer-contact-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-              <rect x="2" y="4" width="20" height="16" rx="3"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            <a href="mailto:swiftkeydevelopment@gmail.com">swiftkeydevelopment@gmail.com</a>
+            <a href="mailto:swiftkeydevelopment@gmail.com">
+              swiftkeydevelopment@gmail.com
+            </a>
           </div>
         </address>
 
         <div className="footer-links">
           <strong>Navigate</strong>
+
           <nav>
-            <a href="#home">
-              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-              Home
-            </a>
-            <a href="#about">
-              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="16" x2="12" y2="12"/>
-                <line x1="12" y1="8" x2="12.01" y2="8"/>
-              </svg>
-              About
-            </a>
-            <a href="#services">
-              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-              </svg>
-              Services
-            </a>
-            <a href="#projects">
-              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <rect x="3" y="3" width="7" height="7"/>
-                <rect x="14" y="3" width="7" height="7"/>
-                <rect x="14" y="14" width="7" height="7"/>
-                <rect x="3" y="14" width="7" height="7"/>
-              </svg>
-              Projects
-            </a>
-            <a href="https://swiftkey.co.ke/" target="_blank" rel="noopener noreferrer">
-              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+
+            <a
+              href="https://swiftkey.co.ke/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit Main Website
             </a>
           </nav>
