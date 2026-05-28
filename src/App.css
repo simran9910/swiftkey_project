@@ -82,6 +82,10 @@ button {
   background: none;
 }
 
+.inline-icon {
+  flex: 0 0 auto;
+}
+
 .site-shell {
   position: relative;
   min-height: 100vh;
@@ -272,6 +276,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 11px 22px;
   border-radius: 999px;
   color: #111;
@@ -1873,7 +1878,7 @@ button {
 
 .footer-contact-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   color: var(--text-muted);
 }

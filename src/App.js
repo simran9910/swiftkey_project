@@ -250,6 +250,84 @@ const industries = [
   'Retail Food Service',
 ];
 
+const iconPaths = {
+  home: (
+    <path d="M3 10.8 12 3l9 7.8v9.7a.5.5 0 0 1-.5.5H15v-6H9v6H3.5a.5.5 0 0 1-.5-.5z" />
+  ),
+  about: (
+    <>
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21a8 8 0 0 1 16 0" />
+    </>
+  ),
+  services: (
+    <>
+      <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3.6 17.4a2.1 2.1 0 1 0 3 3l5.7-5.7a4 4 0 0 0 5.4-5.4l-2.8 2.8-3-3z" />
+      <path d="m15 15 5 5" />
+    </>
+  ),
+  projects: (
+    <>
+      <rect x="3" y="4" width="18" height="16" rx="2" />
+      <path d="M8 4v16M3 9h18" />
+    </>
+  ),
+  contact: (
+    <>
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m4 7 8 6 8-6" />
+    </>
+  ),
+  quote: (
+    <>
+      <path d="M4 4h16v12H8l-4 4z" />
+      <path d="M8 9h8M8 13h5" />
+    </>
+  ),
+  external: (
+    <>
+      <path d="M14 3h7v7" />
+      <path d="M10 14 21 3" />
+      <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" />
+    </>
+  ),
+  phone: (
+    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 5.2 13 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z" />
+  ),
+  mail: (
+    <>
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m4 7 8 6 8-6" />
+    </>
+  ),
+  map: (
+    <>
+      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </>
+  ),
+};
+
+function Icon({ name, size = 18 }) {
+  return (
+    <svg
+      className="inline-icon"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      {iconPaths[name]}
+    </svg>
+  );
+}
+
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -330,13 +408,29 @@ function App() {
         </a>
 
         <nav className="nav-links" aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact Us</a>
+          <a href="#home">
+            <Icon name="home" />
+            Home
+          </a>
+          <a href="#about">
+            <Icon name="about" />
+            About
+          </a>
+          <a href="#services">
+            <Icon name="services" />
+            Services
+          </a>
+          <a href="#projects">
+            <Icon name="projects" />
+            Projects
+          </a>
+          <a href="#contact">
+            <Icon name="contact" />
+            Contact Us
+          </a>
 
           <a className="header-cta" href="#contact">
+            <Icon name="quote" />
             Request a Quote
           </a>
         </nav>
@@ -356,22 +450,27 @@ function App() {
         <div className={`mobile-drawer ${isMobileMenuOpen ? 'is-open' : ''}`}>
           <nav className="mobile-nav-links">
             <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>
+              <Icon name="home" />
               Home
             </a>
 
             <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>
+              <Icon name="about" />
               About
             </a>
 
             <a href="#services" onClick={() => setIsMobileMenuOpen(false)}>
+              <Icon name="services" />
               Services
             </a>
 
             <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>
+              <Icon name="projects" />
               Projects
             </a>
 
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Icon name="contact" />
               Contact
             </a>
 
@@ -380,6 +479,7 @@ function App() {
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
             >
+              <Icon name="quote" />
               Request a Quote
             </a>
 
@@ -389,6 +489,7 @@ function App() {
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
             >
+              <Icon name="external" />
               Visit Main Website
             </a>
           </nav>
@@ -704,7 +805,9 @@ function App() {
               className="contact-card"
               aria-label="Send email to SwiftKey Development"
             >
-              <div className="contact-icon">✉</div>
+              <div className="contact-icon">
+                <Icon name="mail" size={28} />
+              </div>
 
               <span className="contact-label">Email</span>
 
@@ -716,7 +819,9 @@ function App() {
               className="contact-card"
               aria-label="Call SwiftKey Development"
             >
-              <div className="contact-icon">☎</div>
+              <div className="contact-icon">
+                <Icon name="phone" size={28} />
+              </div>
 
               <span className="contact-label">Phone</span>
 
@@ -728,7 +833,9 @@ function App() {
             </a>
 
             <div className="contact-card">
-              <div className="contact-icon">📍</div>
+              <div className="contact-icon">
+                <Icon name="map" size={28} />
+              </div>
 
               <span className="contact-label">Postal Address</span>
 
@@ -761,10 +868,12 @@ function App() {
           <strong>Contact Information</strong>
 
           <div className="footer-contact-item">
+            <Icon name="phone" />
             <span>+254 708 022458 / +254 720 554611</span>
           </div>
 
           <div className="footer-contact-item">
+            <Icon name="mail" />
             <a href="mailto:swiftkeydevelopment@gmail.com">
               swiftkeydevelopment@gmail.com
             </a>
@@ -775,16 +884,29 @@ function App() {
           <strong>Navigate</strong>
 
           <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
+            <a href="#home">
+              <Icon name="home" />
+              Home
+            </a>
+            <a href="#about">
+              <Icon name="about" />
+              About
+            </a>
+            <a href="#services">
+              <Icon name="services" />
+              Services
+            </a>
+            <a href="#projects">
+              <Icon name="projects" />
+              Projects
+            </a>
 
             <a
               href="https://swiftkey.co.ke/"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <Icon name="external" />
               Visit Main Website
             </a>
           </nav>
