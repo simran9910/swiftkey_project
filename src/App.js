@@ -255,7 +255,6 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [transitionType, setTransitionType] = useState('bars');
-  const [activeProject, setActiveProject] = useState(0);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -265,14 +264,14 @@ function App() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTransitionType(getRandomTransition());
-      setActiveSlide((current) => (current + 1) % heroSlides.length);
-    }, 5800);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setTransitionType(getRandomTransition());
+  //     setActiveSlide((current) => (current + 1) % heroSlides.length);
+  //   }, 5800);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   useEffect(() => {
     const revealEls = document.querySelectorAll('.reveal');
@@ -309,20 +308,8 @@ function App() {
     return projects;
   }, []);
 
-  useEffect(() => {
-    if (!filteredProjects.length) return undefined;
-
-    const timer = setInterval(() => {
-      setActiveProject((current) => (current + 1) % filteredProjects.length);
-    }, 4200);
-
-    return () => clearInterval(timer);
-  }, [filteredProjects.length]);
-
   const projectNext = () => {
     if (!filteredProjects.length) return;
-
-    setActiveProject((current) => (current + 1) % filteredProjects.length);
   };
 
   return (
@@ -647,26 +634,25 @@ function App() {
             </p>
           </div>
 
-          <div className="projects-slider">
-            <div className="projects-track">
-              {[...filteredProjects, ...filteredProjects].map((project, index) => (
-                <div className="project-slide-card" key={`${project.name}-${index}`}>
-                  <div className="project-image">
-                    <img src={project.image} alt={project.name} />
-                  </div>
+        <div className="projects-slider">
+  <div className="projects-track">
+    {filteredProjects.map((project, index) => (
+      <div className="project-slide-card" key={`${project.category}-${index}`}>
+        <div className="project-image">
+          <img src={project.image} alt={project.category} />
+        </div>
 
-                  <div className="project-content">
-                    <span className="project-category">{project.category}</span>
+        <div className="project-content">
+          <span className="project-category">{project.category}</span>
 
-                    <h3>{project.name}</h3>
+          <h3>{project.category}</h3>
 
-                    <p>{project.scope}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+          <p>{project.scope}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
           <button className="project-next-btn" type="button" onClick={projectNext}>
             Next Project
           </button>
