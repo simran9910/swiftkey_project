@@ -8,7 +8,7 @@ const getRandomTransition = () => transitionTypes[Math.floor(Math.random() * tra
 const heroSlides = [
 
   {
-    image: '/assets/hero-showroom.png',
+    image: '/assets/cakecity.jpeg',
     label: 'Welcome',
     titleLine1: 'Welcome',
     titleLine2: 'to SwiftKey',
@@ -18,7 +18,7 @@ const heroSlides = [
 
 
   {
-    image: '/assets/image66.jpeg',
+    image: '/assets/artcafe.jpeg',
     label: 'Luxury Construction',
     titleLine1: 'Building',
     titleLine2: 'Modern Spaces',
@@ -27,7 +27,7 @@ const heroSlides = [
   },
 
   {
-    image: '/assets/image2.jpeg',
+    image: '/assets/kangauri.jpeg',
     label: 'Interior Excellence',
     titleLine1: 'Crafting',
     titleLine2: 'Elegant Interiors',
@@ -99,9 +99,9 @@ const services = [
 const projects = [
 
   {
-    image: '/assets/image66.jpeg',
-    name: 'Urban Spice Lounge',
-    category: 'Luxury Restaurant Interiors',
+    image: '/assets/artcafe.jpeg',
+    name: 'Artcafe',
+    category: 'Artcafe',
     scope: 'Restaurant fit-out and dining environment',
     points: [
       'Designed and developed a modern restaurant space focused on delivering a premium dining experience.',
@@ -112,9 +112,9 @@ const projects = [
   },
 
   {
-    image: '/assets/project-mam-mam.png',
+    image: '/assets/cakecity.jpeg',
     name: 'The Golden Fork Café',
-    category: 'Premium Café Design',
+    category: 'Cake City Luqman Petrol Station',
     scope: 'Premium café design and customer experience',
     points: [
       'Created a contemporary café interior with elegant seating and warm ambience.',
@@ -138,9 +138,9 @@ const projects = [
   },
 
   {
-    image: '/assets/image44.jpeg',
+    image: '/assets/artcafe.jpeg',
     name: 'Skyline Bistro Interiors',
-    category: 'Luxury Restaurant Interiors',
+    category: 'Artcaffe Redhill',
     scope: 'Restaurant fit-out and dining environment',
     points: [
       'Designed and developed a modern restaurant space focused on delivering a premium dining experience.',
@@ -393,12 +393,46 @@ function App() {
         </a>
 
         <nav className="nav-links" aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact Us</a>
+          <a href="#home">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            Home
+          </a>
+          <a href="#about">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+            About
+          </a>
+          <a href="#services">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+            Services
+          </a>
+          <a href="#projects">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            Projects
+          </a>
+          <a href="#contact">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            Contact Us
+          </a>
+
           <a className="header-cta" href="#contact">Request a Quote</a>
+
         </nav>
 
         <button
@@ -414,14 +448,56 @@ function App() {
 
         <div className={`mobile-drawer ${isMobileMenuOpen ? 'is-open' : ''}`}>
           <nav className="mobile-nav-links">
-            <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
-            <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a>
-            <a href="#services" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
-            <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</a>
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+
+            <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+              Home
+            </a>
+            <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+              About
+            </a>
+            <a href="#services" onClick={() => setIsMobileMenuOpen(false)}>
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              Services
+            </a>
+            <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+              Projects
+            </a>
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Contact
+            </a>
             <a className="mobile-header-cta" href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
               Request a Quote
             </a>
+            <a href="https://swiftkey.co.ke/" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Visit Main Website
+            </a>
+
           </nav>
         </div>
       </header>
@@ -784,85 +860,52 @@ function App() {
           </p>
         </div>
 
-        {/* ======= CONTACT QUERY FORM ======= */}
+        {/* ======= CONTACT SECTION ======= */}
         <section className="section contact-section reveal" id="contact">
-          <div className="contact-query-box">
-            <div className="contact-copy">
-              <p className="eyebrow">Contact Us</p>
-              <h2>Have any query? Ask us directly.</h2>
-              <p>
-                Share your project requirement, service question, quotation request, or any other query.
-                Our team will connect with you and guide you with the right solution.
-              </p>
+          <div className="contact-heading">
+            <p className="eyebrow">Contact Us</p>
+            <h2>Have any query? Ask us directly.</h2>
+            <p className="contact-subtitle">
+              Share your project requirement, service question, quotation request, or any other query.
+              Our team will connect with you and guide you with the right solution.
+            </p>
+          </div>
 
-              <div className="contact-info-cards">
-
-                {/* EMAIL */}
-                <a
-                  href="mailto:swiftkeydevelopment@gmail.com"
-                  className="info-card"
-                >
-                  <div className="info-icon">
-                    ICON
-                  </div>
-
-                  <div className="info-text">
-                    <span className="info-label">Email Address</span>
-                    <span className="info-value">
-                      swiftkeydevelopment@gmail.com
-                    </span>
-                  </div>
-                </a>
-
-                {/* ADDRESS */}
-                <div className="info-card">
-
-                  <div className="info-icon">
-                    LOCATION ICON
-                  </div>
-
-                  <div className="info-text">
-                    <span className="info-label">Postal Address</span>
-
-                    <span className="info-value">
-                      P.O. Box 76560-00508, Nairobi, Kenya
-                    </span>
-                  </div>
-
-                </div>
-
-                {/* TAX */}
-                <div className="info-card">
-
-                  <div className="info-icon">
-                    TAX ICON
-                  </div>
-
-                  <div className="info-text">
-                    <span className="info-label">
-                      Tax Registration
-                    </span>
-
-                    <span className="info-value">
-                      KRA PIN: P052403621Q
-                    </span>
-                  </div>
-
-
-                </div>
+          <div className="contact-cards-grid">
+            {/* EMAIL CARD */}
+            <a
+              href="mailto:swiftkeydevelopment@gmail.com"
+              className="contact-card"
+              aria-label="Send email to SwiftKey Development"
+            >
+              <div className="contact-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
+              <span className="contact-label">Email</span>
+              <span className="contact-value">swiftkeydevelopment@gmail.com</span>
+            </a>
 
+            {/* PHONE CARD */}
+            <a
+              href="tel:+254708022458"
+              className="contact-card"
+              aria-label="Call SwiftKey Development"
+            >
+              <div className="contact-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 21 18.91V21z"/></svg>
+              </div>
+              <span className="contact-label">Phone</span>
+              <span className="contact-value">+254 708 022458<br/>+254 720 554611</span>
+            </a>
+
+            {/* ADDRESS CARD */}
+            <div className="contact-card">
+              <div className="contact-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span className="contact-label">Postal Address</span>
+              <span className="contact-value">P.O. Box 76560-00508<br/>Nairobi, Kenya</span>
             </div>
-
-            <form className="query-form" onSubmit={handleQuerySubmit}>
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <input type="text" placeholder="Subject" />
-              <textarea placeholder="Write your query..." rows="5" required />
-              <div className="form-actions">
-                <button type="submit">Send Query</button>
-              </div>
-            </form>
           </div>
         </section>
       </main>
@@ -882,18 +925,63 @@ function App() {
 
         <address>
           <strong>Contact Information</strong>
-          <span>+254 708 022458 / +254 720 554611</span>
-          <a href="mailto:tarun@swiftkey.co.ke">swiftkeydevelopment@gmail.com</a>
-          <span>KRA PIN: P052403621Q</span>
+          <div className="footer-contact-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 21 18.91V21z"/>
+            </svg>
+            <span>+254 708 022458 / +254 720 554611</span>
+          </div>
+          <div className="footer-contact-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="2" y="4" width="20" height="16" rx="3"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:swiftkeydevelopment@gmail.com">swiftkeydevelopment@gmail.com</a>
+          </div>
         </address>
 
         <div className="footer-links">
           <strong>Navigate</strong>
           <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
+            <a href="#home">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+              Home
+            </a>
+            <a href="#about">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+              About
+            </a>
+            <a href="#services">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              Services
+            </a>
+            <a href="#projects">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+              Projects
+            </a>
+            <a href="https://swiftkey.co.ke/" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Visit Main Website
+            </a>
           </nav>
         </div>
       </footer>
