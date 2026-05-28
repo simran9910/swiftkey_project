@@ -645,7 +645,7 @@ function App() {
         <div className="project-content">
           <span className="project-category">{project.category}</span>
 
-          <h3>{project.category}</h3>
+          {/* <h3>{project.category}</h3> */}
 
           <p>{project.scope}</p>
         </div>
