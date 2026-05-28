@@ -82,10 +82,10 @@ const services = [
     'Civil & Building Construction',
     'General civil works, structural and finishing works, renovations, remodeling, and commercial construction delivery.',
   ],
-  [
-    'Metal Fabrication',
-    'Stainless steel shelving, counters, hoods, cabinets, workstations, and custom metal works for hygiene compliance.',
-  ],
+  // [
+  //   'Metal Fabrication',
+  //   'Stainless steel shelving, counters, hoods, cabinets, workstations, and custom metal works for hygiene compliance.',
+  // ],
   [
     'Fit-Outs',
     'Complete kitchen fit-outs, fabricated unit installation, fixtures, and hospitality or commercial interior fit-outs.',
@@ -120,8 +120,8 @@ const projects = [
     ],
   },
   {
-    image: '/assets/image2.jpeg',
-    category: 'Commercial Restaurant Design',
+    image: '/assets/mummam.jpeg',
+    category: 'Mammam Vietnamese Restaurant Westland',
     scope: 'Restaurant branding and interior execution',
     points: [
       'Developed a visually appealing dining environment with modern finishes.',
@@ -143,7 +143,7 @@ const projects = [
   },
   {
     image: '/assets/project-cake-city.png',
-    category: 'Bakery & Dessert Spaces',
+    category: 'Joto Ramen Japanese Restaurant',
     scope: 'Bakery retail planning and display counters',
     points: [
       'Designed a premium bakery retail space focused on creating a warm and welcoming customer atmosphere.',
@@ -154,8 +154,8 @@ const projects = [
     ],
   },
   {
-    image: '/assets/project-art-caffe.png',
-    category: 'Contemporary Café Interiors',
+    image: '/assets/Dijowestland4.jpeg',
+    category: 'Dijo Westland',
     scope: 'Cafe interior and commercial hospitality space',
     points: [
       'Developed a stylish café interior combining modern design with a comfortable customer experience.',
@@ -166,8 +166,8 @@ const projects = [
     ],
   },
   {
-    image: '/assets/project-cake-city-nord.png',
-    category: 'Retail Bakery Architecture',
+    image: '/assets/kangauri1.jpeg',
+    category: 'Kangauri',
     scope: 'Retail bakery outlet and showcase design',
     points: [
       'Developed a stylish retail shop with a modern, welcoming ambiance.',
@@ -330,11 +330,43 @@ function App() {
         </a>
 
         <nav className="nav-links" aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact Us</a>
+          <a href="#home">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            Home
+          </a>
+          <a href="#about">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+            About
+          </a>
+          <a href="#services">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+            Services
+          </a>
+          <a href="#projects">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            Projects
+          </a>
+          <a href="#contact">
+            <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            Contact Us
+          </a>
 
           <a className="header-cta" href="#contact">
             Request a Quote
@@ -402,9 +434,8 @@ function App() {
           <div className="hero-media" aria-hidden="true">
             {heroSlides.map((item, index) => (
               <div
-                className={`hero-slide ${transitionType} ${
-                  index === activeSlide ? 'is-active' : ''
-                }`}
+                className={`hero-slide ${transitionType} ${index === activeSlide ? 'is-active' : ''
+                  }`}
                 key={`${item.image}-${index}`}
               >
                 <div className="hero-slide-slices">
@@ -481,7 +512,7 @@ function App() {
           </div>
 
           <div className="stat-item">
-            <strong>12+</strong>
+            <strong>20+</strong>
             <span>Projects Delivered</span>
           </div>
 
@@ -518,20 +549,15 @@ function App() {
                 <h3>Creative Planning Professional Execution.</h3>
 
                 <p>
-                  Incorporated on 11th February 2025, SwiftKey Development Limited was
-                  established with a vision to deliver premium construction and hospitality
-                  solutions tailored for modern commercial environments.
+                  Incorporated on 11th February 2025, SwiftKey Development Limited was founded with a vision to redefine modern commercial spaces through innovative construction.
                 </p>
 
                 <p>
-                  We specialize in commercial kitchen construction, stainless steel
-                  fabrication, restaurant interiors, fit-outs, and maintenance services for
-                  hotels, restaurants, cafés, bars, institutions, and food-service
-                  establishments.
+                  We specialize in commercial fabrication and stainless steel solutions, delivering premium restaurant interiors, fit-outs, and maintenance services for hotels, restaurants, cafés, bars, institutions, and modern food-service establishments
                 </p>
 
                 <p>
-                  Our team focuses on combining functionality, durability, hygiene, and
+                  Our team focuses on combining functionality, durability and
                   modern aesthetics to create spaces that perform efficiently while
                   maintaining a premium appearance.
                 </p>
@@ -574,7 +600,7 @@ function App() {
           <div className="section-heading compact">
             <p className="eyebrow">Core Specialization</p>
 
-            <h2>Commercial kitchen spaces designed from concept to completion.</h2>
+            <h2>Commercial fabrication spaces designed from concept to completion.</h2>
 
             <p>
               Our solutions support efficiency, safety, hygiene, durability, and modern design
@@ -587,7 +613,8 @@ function App() {
             <span>Practical layouts</span>
             <span>Quality materials</span>
             <span>Skilled workmanship</span>
-            <span>Safety &amp; hygiene standards</span>
+            <span> Safety Standards</span>
+            {/* <span>Safety &amp; hygiene standards</span> */}
           </div>
         </section>
 
@@ -634,25 +661,25 @@ function App() {
             </p>
           </div>
 
-        <div className="projects-slider">
-  <div className="projects-track">
-    {filteredProjects.map((project, index) => (
-      <div className="project-slide-card" key={`${project.category}-${index}`}>
-        <div className="project-image">
-          <img src={project.image} alt={project.category} />
-        </div>
+          <div className="projects-slider">
+            <div className="projects-track">
+              {filteredProjects.map((project, index) => (
+                <div className="project-slide-card" key={`${project.category}-${index}`}>
+                  <div className="project-image">
+                    <img src={project.image} alt={project.category} />
+                  </div>
 
-        <div className="project-content">
-          <span className="project-category">{project.category}</span>
+                  <div className="project-content">
+                    <span className="project-category">{project.category}</span>
 
-          {/* <h3>{project.category}</h3> */}
+                    {/* <h3>{project.category}</h3> */}
 
-          <p>{project.scope}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
+                    <p>{project.scope}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
           <button className="project-next-btn" type="button" onClick={projectNext}>
             Next Project
           </button>
@@ -708,7 +735,7 @@ function App() {
 
               <span className="contact-label">Email</span>
 
-              <span className="contact-value">swiftkeydevelopment@gmail.com</span>
+              <span className="contact-value">tarun@swiftkey.co.ke</span>
             </a>
 
             <a
@@ -723,7 +750,7 @@ function App() {
               <span className="contact-value">
                 +254 708 022458
                 <br />
-                +254 720 554611
+               
               </span>
             </a>
 
@@ -753,18 +780,31 @@ function App() {
           </a>
 
           <p>
-            Building quality solutions for construction and hospitality spaces across Kenya.
+            Delivering quality solutions for construction and hospitality spaces across Kenya.
           </p>
         </div>
 
         <address>
-          <strong>Contact Information</strong>
+          <strong>
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Contact Information
+          </strong>
 
           <div className="footer-contact-item">
-            <span>+254 708 022458 / +254 720 554611</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 21 18.91V21z" />
+            </svg>
+            <span>+254 708 022458 </span>
           </div>
 
           <div className="footer-contact-item">
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <rect x="2" y="4" width="20" height="16" rx="3" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
             <a href="mailto:swiftkeydevelopment@gmail.com">
               swiftkeydevelopment@gmail.com
             </a>
@@ -772,19 +812,56 @@ function App() {
         </address>
 
         <div className="footer-links">
-          <strong>Navigate</strong>
+          <strong>
+            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+            Navigate
+          </strong>
 
           <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
+            <a href="#home">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+              Home
+            </a>
+            <a href="#about">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
+              </svg>
+              About
+            </a>
+            <a href="#services">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+              Services
+            </a>
+            <a href="#projects">
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+              </svg>
+              Projects
+            </a>
 
             <a
               href="https://swiftkey.co.ke/"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
               Visit Main Website
             </a>
           </nav>

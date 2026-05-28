@@ -1331,7 +1331,7 @@ button {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   justify-items: center;
   text-align: center;
@@ -1482,7 +1482,7 @@ button {
 ========================= */
 
 .project-slide-card {
-  width: 360px;
+  width: 550px;
   flex-shrink: 0;
 
   border-radius: 26px;
@@ -1519,7 +1519,7 @@ button {
 
 .project-image {
   width: 100%;
-  height: 220px;
+  height: 380px;
   overflow: hidden;
 }
 
@@ -1902,7 +1902,14 @@ button {
   color: #fff;
   font-weight: 800;
   margin-bottom: 6px;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer strong svg {
+  flex-shrink: 0;
+  color: var(--accent);
 }
 
 .footer-brand {
@@ -2890,6 +2897,15 @@ button {
   .project-nav-left,
   .project-nav-right {
     justify-self: center;
+  }
+
+  /* Project Slider Mobile Responsive */
+  .project-slide-card {
+    width: 320px;
+  }
+
+  .project-image {
+    height: 240px;
   }
 
   .featured-project-content {
