@@ -76,7 +76,7 @@ const heroSlides = [
 const services = [
   [
     'Design Services',
-    'Commercial kitchen design, space planning, functional layouts, and custom designs tailored to client operations and standards.',
+    'Commercial hospitality design, space planning, functional layouts, and custom designs tailored to client operations and standards.',
   ],
   [
     'Civil & Building Construction',
@@ -88,7 +88,7 @@ const services = [
   // ],
   [
     'Fit-Outs',
-    'Complete kitchen fit-outs, fabricated unit installation, fixtures, and hospitality or commercial interior fit-outs.',
+    'Complete  fit-outs, fabricated unit installation, fixtures,hospitality or commercial interior fit-outs.',
   ],
   [
     'Maintenance Services',
@@ -98,7 +98,7 @@ const services = [
 
 const projects = [
   {
-    image: '/assets/project-joto-ramen.png',
+    image: '/assets/jutte_raman1.jpeg',
     category: 'Joto Ramen Japanese Restaurant',
     scope: 'Japanese restaurant at 3 locations: Kenrail Tower Westlands, Lavington Mall, and Alchemist Bar Westlands',
     points: [
@@ -109,9 +109,10 @@ const projects = [
       'Delivered modern yet culturally rooted dining spaces with precision.',
     ],
   },
-  {
-    image: '/assets/project-artcaffe-redhill.png',
-    category: 'Artcaffe',
+
+    {
+    image: '/assets/kangauri1.jpeg',
+    category: 'Kangauri',
     scope: 'Premium café chain at Redhill, Lavington, Kisumu, Nanyuki, and Enaki',
     points: [
       'Designed and developed modern restaurant spaces focused on delivering premium dining experiences.',
@@ -122,8 +123,20 @@ const projects = [
     ],
   },
   {
-    image: '/assets/project-cake-city.png',
-    category: 'Cake City',
+    image: '/assets/Alchemist toilets.jpeg',
+    category: 'Alchemist Toilets',
+    scope: 'Premium café chain at Redhill, Lavington, Kisumu, Nanyuki, and Enaki',
+    points: [
+      'Designed and developed modern restaurant spaces focused on delivering premium dining experiences.',
+      'Planned efficient layouts supporting smooth customer flow and optimized service operations.',
+      'Used high-quality materials and refined finishes to create stylish and comfortable environments.',
+      'Implemented ambient and feature lighting to enhance dining atmosphere across all locations.',
+      'Maintained consistent brand identity while adapting to each location\'s unique characteristics.',
+    ],
+  },
+  {
+    image: '/assets/MammamVietname.jpeg',
+    category: 'Mammam Vietnamese Restaurant Westland',
     scope: 'Bakery outlets at Luqman Mall, Nord Mall Ruiru, TRM Mall, Ruaka Mall, and Imaara Mall',
     points: [
       'Designed premium bakery retail spaces focused on creating warm and welcoming customer atmospheres.',
@@ -134,8 +147,8 @@ const projects = [
     ],
   },
   {
-    image: '/assets/hero-showroom.png',
-    category: 'Dijo Restaurant',
+    image: '/assets/cake2.jpeg',
+    category: 'Cake City Luqman Petrol Station',
     scope: 'French cuisine restaurant at Mandrake, Westlands',
     points: [
       'Developed a sophisticated French dining interior combining elegance with modern design.',
@@ -146,8 +159,8 @@ const projects = [
     ],
   },
   {
-    image: '/assets/project-mammam-vietnamese.png',
-    category: 'Mammam Restaurant',
+    image: '/assets/artcaferednew.jpeg',
+    category: 'Artcaffe Redhill',
     scope: 'Vietnamese cuisine at Mwanzi Market Westlands and MyTown Mall Karen',
     points: [
       'Executed construction reflecting authentic Vietnamese dining culture at two locations.',
@@ -158,8 +171,8 @@ const projects = [
     ],
   },
   {
-    image: '/assets/kangauri.jpeg',
-    category: 'Okia Café',
+    image: '/assets/Alchemist_floor2.jpeg',
+    category: 'Alchemist 3 Floor Bar Westland',
     scope: 'Vietnamese café at Riverside Road',
     points: [
       'Developed a stylish Vietnamese café with modern, welcoming ambiance.',
@@ -170,8 +183,8 @@ const projects = [
     ],
   },
   {
-    image: '/assets/artcafe.jpeg',
-    category: 'Alchemist Bar',
+    image: '/assets/Dijowestland3.jpeg',
+    category: 'Dijo Westland',
     scope: 'Bar and entertainment venue at Westlands',
     points: [
       'Executed modern bar construction with dynamic lighting and elegant finishes.',
@@ -567,7 +580,7 @@ function App() {
 
             <p className="about-top-text">
               SwiftKey Development Limited is a Kenyan-owned private limited company
-              specializing in commercial construction, kitchen planning, fabrication,
+              specializing in commercial construction, hospitality planning, fabrication,
               fit-outs, and maintenance solutions for hospitality and food-service
               industries.
             </p>
@@ -630,7 +643,7 @@ function App() {
           <div className="section-heading compact">
             <p className="eyebrow">Core Specialization</p>
 
-            <h2>Commercial fabrication spaces designed from concept to completion.</h2>
+            <h2>Commercial hospitality spaces designed from concept to completion.</h2>
 
             <p>
               Our solutions support efficiency, safety, hygiene, durability, and modern design
@@ -657,7 +670,7 @@ function App() {
             </div>
 
             <p>
-              We combine planning, construction, fabrication, installation, and maintenance
+              We combine planning, construction, hospitality, installation, and maintenance
               into a single coordinated workflow for commercial clients.
             </p>
           </div>
@@ -757,7 +770,7 @@ function App() {
 
           <div className="contact-cards-grid">
             <a
-              href="mailto:swiftkeydevelopment@gmail.com"
+              href="mailto:tarun@swiftkey.co.ke"
               className="contact-card"
               aria-label="Send email to SwiftKey Development"
             >
@@ -841,8 +854,8 @@ function App() {
               <rect x="2" y="4" width="20" height="16" rx="3" />
               <polyline points="22,6 12,13 2,6" />
             </svg>
-            <a href="mailto:swiftkeydevelopment@gmail.com">
-              swiftkeydevelopment@gmail.com
+            <a href="mailto:tarun@swiftkey.co.ke">
+              tarun@swiftkey.co.ke
             </a>
           </div>
         </address>
